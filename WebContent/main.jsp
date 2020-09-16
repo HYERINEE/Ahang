@@ -39,14 +39,35 @@
 										</li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">연령대별 제품보기</a></li>
-								<li><a href="right-sidebar.html">피부상태별 제품보기</a></li>
-								<li><a href="no-sidebar.html">리뷰</a></li>
+								<li><a href="left-sidebar.jsp">연령대별 제품보기</a></li>
+								<ul>
+										<li><a href="#">0~6개월</a></li>
+										<li><a href="#">~12개월</a></li>
+										<li><a href="#">~24개월</a></li>
+										<li><a href="#">~36개월</a>
+										<li><a href="#">36개월이상</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+									</ul>
+								<li><a href="right-sidebar.jsp">피부상태별 제품보기</a></li>
+								<ul>
+										<li><a href="#">아토피</a></li>
+										<li><a href="#">알러지</a></li>
+										<li><a href="#">건성</a></li>
+										<li><a href="#">민감성</a></li>
+								</ul>
+								<li><a href="no-sidebar.jsp">리뷰</a></li>
 								<li class="current"><a href="login.jsp">login</a></li>
 							</ul>
 						</nav>
 					<!-- Logo 메인화면 이름-->
-						<h1><a href="index.html">김어항_아기안전본부</a></h1>
+						<h1><a href="main.jsp">김어항_아기안전본부</a></h1>
 
 					<!-- Banner -->
 						<section id="banner">
