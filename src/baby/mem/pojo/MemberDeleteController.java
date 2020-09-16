@@ -15,7 +15,7 @@ public class MemberDeleteController implements Controller{
 		
 		String cpath=request.getContextPath();
 		int num=Integer.parseInt(request.getParameter("num"));		
-		MemberDAO dao=new MemberDAO();
+		BabyMemberDAO dao=new BabyMemberDAO();
 		int cnt=dao.memberDelete(num);
 		String page=null;
 		if(cnt>0) {

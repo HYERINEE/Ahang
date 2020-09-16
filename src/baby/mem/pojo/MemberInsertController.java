@@ -6,6 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import baby.model.BabyMemberVO;
 import kr.mem.model.MemberDAO;
 import kr.mem.model.MemberVO;
 public class MemberInsertController implements Controller{
@@ -17,11 +18,11 @@ public class MemberInsertController implements Controller{
 		String name = request.getParameter("name");
 	      String phone = request.getParameter("phone");
 	      String addr = request.getParameter("addr");			  
-	      MemberVO vo = new MemberVO();
+	      BabyMemberVO vo = new BabyMemberVO();
 	      vo.setName(name);
 	      vo.setPhone(phone);
 	      vo.setAddr(addr);		
-		  MemberDAO dao=new MemberDAO();
+		  BabyMemberDAO dao=new BabyMemberDAO();
 		  int cnt=dao.memberInsert(vo);
 		  String page=null;
 		  if(cnt>0) {
