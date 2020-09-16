@@ -122,24 +122,24 @@
 										<header>
 											<h3>당신의 관심사</h3>
 										</header>
-										<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+										<p> 확인하세요! 당신의 관심사를 한 눈에 확인합니다.</p>
 										<footer>
 											<a href="#" class="button alt">둘러보기</a>
 										</footer>
 									</section>
 									<section class="box">
 										<header>
-											<h3>Feugiat consequat</h3>
+											<h3>알아보기</h3>
 										</header>
-										<p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
+										<p>우리 아이는요...</p>
 										<ul class="divided">
-											<li><a href="#">Sed et blandit consequat sed</a></li>
-											<li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
-											<li><a href="#">Sapien id suscipit magna sed felis</a></li>
-											<li><a href="#">Aptent taciti sociosqu ad litora</a></li>
+											<li><a href="#">피부가 빨갛게 달아올라요</a></li>
+											<li><a href="#">피부가 건조해요</a></li>
+											<li><a href="#">아토피가 있아요</a></li>
+											<li><a href="#">두드러기가 올라와요</a></li>
 										</ul>
 										<footer>
-											<a href="#" class="button alt">Ipsum consequat</a>
+											<a href="#" class="button alt">둘러보기</a>
 										</footer>
 									</section>
 
@@ -189,25 +189,23 @@
 							<div class="col-4 col-12-medium">
 								<section>
 									<header>
-										<h2>What's this all about?</h2>
+										<h2>당신은 알고 있나요?</h2>
 									</header>
 									<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
 									<p>
-										This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-										<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-										the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+										각 제품의 성분을 분석하여 우리 아이에게 적합한 제품을 제공해드립니다. 
 									</p>
 									<footer>
 										<ul class="actions">
-											<li><a href="#" class="button">Find out more</a></li>
+											<li><a href="#" class="button">둘러보기</a></li>
 										</ul>
 									</footer>
 								</section>
 							</div>
-							<div class="col-4 col-6-medium col-12-small">
+							<div class="col-4 col-6-medium col-12-small" >
 								<section>
 									<header>
-										<h2>Tempus consequat</h2>
+										<h2>어떻게 해야 하나요?</h2>
 									</header>
 									<ul class="divided">
 										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -219,25 +217,11 @@
 									</ul>
 								</section>
 							</div>
-							<div class="col-4 col-6-medium col-12-small">
-								<section>
+							
+							<div class="col-4 col-12-medium" class="relative">
+								<section >
 									<header>
-										<h2>Ipsum et phasellus</h2>
-									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section>
-									<header>
-										<h2>Vitae tempor lorem</h2>
+										<h2>대표자</h2>
 									</header>
 									<ul class="social">
 										<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
@@ -250,18 +234,18 @@
 										<li>
 											<h3>Address</h3>
 											<p>
-												Untitled Incorporated<br />
-												1234 Somewhere Road Suite<br />
-												Nashville, TN 00000-0000
+												광주광역시<br />
+												첨단 어느곳<br />
+												TN 010-2935-2334
 											</p>
 										</li>
 										<li>
 											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
+											<p><a href="#">someone@google.com</a></p>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
+											<p>(062) 000-0000</p>
 										</li>
 									</ul>
 								</section>
@@ -271,7 +255,7 @@
 								<!-- Copyright -->
 									<div id="copyright">
 										<ul class="links">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li>&copy; HYERINEE Company</li>
 										</ul>
 									</div>
 
