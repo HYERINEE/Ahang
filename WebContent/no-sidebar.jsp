@@ -20,12 +20,12 @@
 				<section id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html">김어항_아기안전본부</a></h1>
+						<h1><a href="main.jsp">김어항_아기안전본부</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="main.jsp">Home</a></li>
 								<li>
 									<a href="#">카테고리</a>
 									<ul>
@@ -45,10 +45,10 @@
 				
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">연령대별 제품보기</a></li>
-								<li><a href="right-sidebar.html">피부상태별 제품보기</a></li>
+								<li><a href="left-sidebar.jsp">연령대별 제품보기</a></li>
+								<li><a href="right-sidebar.jsp">피부상태별 제품보기</a></li>
 								<!-- 리뷰 탭에 -> 공지사항바꾸기! -->
-								<li class="current"><a href="no-sidebar.html">리뷰</a></li>
+								<li class="current"><a href="no-sidebar.jsp">리뷰</a></li>
 							</ul>
 						</nav>
 
