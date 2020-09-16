@@ -20,37 +20,47 @@
 				<section id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html">Dopetrope</a></h1>
+						<h1><a href="main.jsp">김어항_아기안전본부</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="main.jsp">효정이 바부</a></li>
 								<li>
-									<a href="#">Dropdown</a>
+									<a href="#">생활용품</a>
 									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li>
-											<a href="#">Phasellus consequat</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-												<li><a href="#">Nisl sed aliquam</a></li>
-												<li><a href="#">Dolore adipiscing</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
+										<li><a href="#">로션</a></li>
+										<li><a href="#">오일</a></li>
+										<li><a href="#">바디워시</a></li>
+										<li><a href="#">크림</a></li>
+										
 									</ul>
 								</li>
-								<li class="current"><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="left-sidebar.jsp">연령대별 제품보기</a>
+									<ul>
+										<li><a href="#">6개월이하</a></li>
+										<li><a href="#">6개월~1년</a></li>
+										<li><a href="#">1년~2년</a></li>
+										<li><a href="#">3년이상</a></li>
+										
+									</ul>
+								</li>
+								
+								
+								<li class="current"><a href="right-sidebar.jsp">피부상태별 제품보기</a>
+								<ul>
+										<li><a href="#">아토피</a></li>
+										<li><a href="#">건성피부</a></li>
+										<li><a href="#">진물</a></li>
+										<li><a href="#">등등</a></li>
+										
+									</ul>
+								
+								</li>
+								<li><a href="no-sidebar.jsp">리뷰</a></li>
+								
 							</ul>
 						</nav>
-
 				</section>
 
 			<!-- Main -->
