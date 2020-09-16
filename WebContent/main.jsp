@@ -19,21 +19,19 @@
 			<!-- Header -->
 				<section id="header">
 
-					<!-- Logo -->
-						<h1><a href="index.html">Dopetrope</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
 								<li>
-									<a href="#">Dropdown</a>
+									<a href="#">카테고리</a>
 									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
+										<li><a href="#">워시</a></li>
+										<li><a href="#">로션</a></li>
+										<li><a href="#">크림</a></li>
 										<li>
-											<a href="#">Phasellus consequat</a>
+											<a href="#">오일</a>
 											<ul>
 												<li><a href="#">Magna phasellus</a></li>
 												<li><a href="#">Etiam dolore nisl</a></li>
@@ -42,20 +40,21 @@
 												<li><a href="#">Dolore adipiscing</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="left-sidebar.html">연령대별 제품보기</a></li>
+								<li><a href="right-sidebar.html">피부상태별 제품보기</a></li>
+								<li><a href="no-sidebar.html">리뷰</a></li>
 							</ul>
 						</nav>
+					<!-- Logo 메인화면 이름-->
+						<h1><a href="index.html">김어항_아기안전본부</a></h1>
 
 					<!-- Banner -->
 						<section id="banner">
 							<header>
-								<h2>Howdy. This is Dopetrope.</h2>
-								<p>A responsive template by HTML5 UP</p>
+								<h2>아기화장품의 전성분은 김어항이 책임진다</h2>
+								<p>착한성분! 착한제품! 전성분공개! 프로젝트</p>
 							</header>
 						</section>
 
@@ -66,27 +65,27 @@
 									<section class="first">
 										<i class="icon solid featured fa-cog"></i>
 										<header>
-											<h2>Ipsum consequat</h2>
+											<h2>새로나온제품</h2>
 										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+										<p>핫한 신상품! 성분확인 후 정보공유를 해보자!</p>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="middle">
 										<i class="icon solid featured alt fa-bolt"></i>
 										<header>
-											<h2>Magna etiam dolor</h2>
+											<h2>주의성분가이드</h2>
 										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+										<p>알고싶어도 어려운 성분들! 여기서 쉽게 알아보자!</p>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="last">
 										<i class="icon solid featured alt2 fa-star"></i>
 										<header>
-											<h2>Tempus adipiscing</h2>
+											<h2>아기건강백서</h2>
 										</header>
-										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+										<p>육아중 돌발상황이 일어난다면? 여기를 확인해주세요</p>
 									</section>
 								</div>
 							</div>
@@ -109,14 +108,14 @@
 								<!-- Portfolio -->
 									<section>
 										<header class="major">
-											<h2>My Portfolio</h2>
+											<h2>성분비교 크리에이터 리뷰</h2>
 										</header>
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+													<a href="#" class="image featured"><iframe width="400" height="350" src="https://www.youtube.com/embed/FcWGyyRroS4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
 													<header>
-														<h3>Ipsum feugiat et dolor</h3>
+																											<h3>Ipsum feugiat et dolor</h3>
 													</header>
 													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
 													<footer>
@@ -124,11 +123,13 @@
 															<li><a href="#" class="button alt">Find out more</a></li>
 														</ul>
 													</footer>
+
 												</section>
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+													<a href="#" class="image featured"><iframe width="400" height="350" src="https://www.youtube.com/embed/LSas7tCwekU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+													
 													<header>
 														<h3>Sed etiam lorem nulla</h3>
 													</header>
@@ -142,7 +143,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+													<a href="#" class="image featured"><iframe width="400" height="350" src="https://www.youtube.com/embed/SCEH8LRitZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
 													<header>
 														<h3>Consequat et tempus</h3>
 													</header>
@@ -156,7 +157,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+													<a href="#" class="image featured"><iframe width="400" height="350" src="https://www.youtube.com/embed/OC1oa2C2LCI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
 													<header>
 														<h3>Blandit sed adipiscing</h3>
 													</header>
@@ -170,7 +171,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+													<a href="#" class="image featured"><iframe width="400" height="350" src="https://www.youtube.com/embed/z0Fg1Gq_2-Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
 													<header>
 														<h3>Etiam nisl consequat</h3>
 													</header>
@@ -184,7 +185,7 @@
 											</div>
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+													<a href="#" class="image featured"><iframe width="400" height="350" src="https://www.youtube.com/embed/FzPmkuk2jwY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
 													<header>
 														<h3>Dolore nisl feugiat</h3>
 													</header>

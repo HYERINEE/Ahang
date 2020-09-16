@@ -19,40 +19,60 @@
 			<!-- Header -->
 				<section id="header">
 
-					<!-- Logo -->
-						<h1><a href="index.html">Dopetrope</a></h1>
+					<!-- 제목 -->
+						<h1><a href="index.html">김어항_아기안전본부</a></h1>
 
-					<!-- Nav -->
+					<!-- 여기부터 상단목차  -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html">효정이 바부</a></li>
 								<li>
-									<a href="#">Dropdown</a>
+									<a href="#">생활용품</a>
 									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-										<li>
-											<a href="#">Phasellus consequat</a>
-											<ul>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam dolore nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-												<li><a href="#">Nisl sed aliquam</a></li>
-												<li><a href="#">Dolore adipiscing</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
+										<li><a href="#">로션</a></li>
+										<li><a href="#">오일</a></li>
+										<li><a href="#">바디워시</a></li>
+										<li><a href="#">머였지</a></li>
+										
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
-								<li class="current"><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="left-sidebar.html">연령대별 제품보기</a>
+									<ul>
+										<li><a href="#">6개월이하</a></li>
+										<li><a href="#">6개월~1년</a></li>
+										<li><a href="#">1년~2년</a></li>
+										<li><a href="#">3년이상</a></li>
+										
+									</ul>
+								</li>
+								
+								
+								<li class="current"><a href="right-sidebar.html">피부상태별 제품보기</a>
+								<ul>
+										<li><a href="#">아토피</a></li>
+										<li><a href="#">건성피부</a></li>
+										<li><a href="#">진물</a></li>
+										<li><a href="#">등등</a></li>
+										
+									</ul>
+								
+								</li>
+								<li><a href="no-sidebar.html">추천제품</a>
+								<ul>
+										<li><a href="#">신상</a></li>
+										<li><a href="#">세일</a></li>
+										<li><a href="#">무료나눔</a></li>
+										<li><a href="#">문의사항 </a></li>
+										
+									</ul>
+								
+								</li>
+								
 							</ul>
 						</nav>
 
 				</section>
-
+				<!-- 여기까지 -->
 			<!-- Main -->
 				<section id="main">
 					<div class="container">
@@ -63,51 +83,32 @@
 									<article class="box post">
 										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 										<header>
-											<h2>Right sidebar</h2>
-											<p>Lorem ipsum dolor sit amet feugiat</p>
+											<h2>저희 연구소는...</h2>
+											<p>특화된 첨단기술로..</p>
 										</header>
 										<p>
-											Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-											hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-											Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-											Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
+											효정이 바보
 										</p>
 										<p>
-											Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-											a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-											placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-											eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-											elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-											sit amet nullam consequat feugiat dolore tempus.
+											효정이 바보
 										</p>
 										<section>
 											<header>
-												<h3>Something else</h3>
+												<h3>당신의 아이를 지키고 싶다면</h3>
 											</header>
 											<p>
-												Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-												placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus.
+												효정이 바보
 											</p>
 											<p>
-												Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus.
+												효정이 바보
 											</p>
 										</section>
 										<section>
 											<header>
-												<h3>So in conclusion ...</h3>
+												<h3>현금 5천만원을 준비해놔라</h3>
 											</header>
 											<p>
-												Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-												Maecenas sagittis convallis justo vel mattis.
+												효정이 바보
 											</p>
 										</section>
 									</article>
@@ -119,11 +120,11 @@
 									<section class="box">
 										<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
 										<header>
-											<h3>Sed etiam lorem nulla</h3>
+											<h3>당신의 관심사</h3>
 										</header>
 										<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
 										<footer>
-											<a href="#" class="button alt">Magna sed taciti</a>
+											<a href="#" class="button alt">둘러보기</a>
 										</footer>
 									</section>
 									<section class="box">
@@ -154,31 +155,31 @@
 							<div class="col-8 col-12-medium">
 								<section>
 									<header>
-										<h2>Blandit nisl adipiscing</h2>
+										<h2>다른 엄빠들의 초이스!</h2>
 									</header>
 									<ul class="dates">
 										<li>
-											<span class="date">Jan <strong>27</strong></span>
-											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+											<span class="date">개월<strong>0~6</strong></span>
+											<h3><a href="#">초특급으로 공기만 닿아도 난리나는 시기</a></h3>
+											<p>애가 없어서 모르겠다..</p>
 										</li>
 										<li>
-											<span class="date">Jan <strong>23</strong></span>
+											<span class="date">개월<strong>6~12</strong></span>
 											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
 											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
 										</li>
 										<li>
-											<span class="date">Jan <strong>15</strong></span>
+											<span class="date">개월<strong>12~18</strong></span>
 											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
 											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
 										</li>
 										<li>
-											<span class="date">Jan <strong>12</strong></span>
+											<span class="date">개월<strong>18~24</strong></span>
 											<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
 											<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
 										</li>
 										<li>
-											<span class="date">Jan <strong>10</strong></span>
+											<span class="date">개월<strong>2~</strong></span>
 											<h3><a href="#">Blandit tempus aliquam?</a></h3>
 											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
 										</li>
