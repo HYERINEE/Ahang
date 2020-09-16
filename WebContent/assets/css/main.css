@@ -1535,7 +1535,7 @@ input, select, textarea {
 		}
 
 	header {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 0 0;
 	}
 
 		header > p {
@@ -2068,7 +2068,7 @@ input, select, textarea {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		padding: 0 0 0 0;
 		text-align: center;
 	}
 
@@ -2374,7 +2374,7 @@ input, select, textarea {
 		/* Section/Article */
 
 			header.major {
-				margin: 0.75em 0 2.5em 0;
+				margin: 0 0 0 0;
 			}
 
 				header.major h2 {
@@ -2390,7 +2390,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4em 0 3em 0;
+				padding: 0 0 0 0;
 			}
 
 		/* Banner */
@@ -2482,7 +2482,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 3.5em 0 3em 0;
+				padding: 0 0 0 0;
 			}
 
 		/* Nav */

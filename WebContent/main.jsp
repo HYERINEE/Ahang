@@ -18,12 +18,9 @@
 
 			<!-- Header -->
 				<section id="header">
-
-
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
 								<li>
 									<a href="#">카테고리</a>
 									<ul>
@@ -45,6 +42,7 @@
 								<li><a href="left-sidebar.html">연령대별 제품보기</a></li>
 								<li><a href="right-sidebar.html">피부상태별 제품보기</a></li>
 								<li><a href="no-sidebar.html">리뷰</a></li>
+								<li class="current"><a href="login.jsp">login</a></li>
 							</ul>
 						</nav>
 					<!-- Logo 메인화면 이름-->
@@ -89,12 +87,12 @@
 									</section>
 								</div>
 							</div>
-							<footer>
+<!-- 							<footer> 나중에 사용하려면 하세유 ~
 								<ul class="actions">
 									<li><a href="#" class="button large">Get Started</a></li>
 									<li><a href="#" class="button alt large">Learn More</a></li>
 								</ul>
-							</footer>
+							</footer> -->
 						</section>
 
 				</section>
