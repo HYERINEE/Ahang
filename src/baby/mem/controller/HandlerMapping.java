@@ -1,5 +1,12 @@
 package baby.mem.controller;
 import java.util.HashMap;
+
+import baby.mem.pojo.MemberContentController;
+import baby.mem.pojo.MemberDeleteController;
+import baby.mem.pojo.MemberInsertController;
+import baby.mem.pojo.MemberInsertFormController;
+import baby.mem.pojo.MemberListController;
+import baby.mem.pojo.MemberUpdateController;
 import kr.mem.pojo.Controller;
 import kr.mem.pojo.*;
 public class HandlerMapping {

@@ -6,6 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import baby.model.BabyMemberDAO;
 import kr.mem.model.MemberDAO;
 
 public class MemberDeleteController implements Controller{
