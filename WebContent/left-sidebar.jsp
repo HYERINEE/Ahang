@@ -52,10 +52,8 @@
 										<li><a href="#">아토피</a></li>
 										<li><a href="#">건성피부</a></li>
 										<li><a href="#">진물</a></li>
-										<li><a href="#">등등</a></li>
-										
+										<li><a href="#">등등</a></li>	
 									</ul>
-								
 								</li>
 								<li><a href="no-sidebar.jsp">리뷰</a></li>
 								
