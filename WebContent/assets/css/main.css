@@ -1716,7 +1716,7 @@ input, select, textarea {
 		}
 
 		.image.left {
-			float: left;
+			float: center;
 			margin: 0 2em 2em 0;
 		}
 
