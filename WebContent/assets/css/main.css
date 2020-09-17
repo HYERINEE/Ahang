@@ -2087,13 +2087,14 @@ input, select, textarea {
 	}
 
 		#nav > ul {
-			margin: 0;
+			margin: 0px;
 		}
 
 			#nav > ul > li {
 				display: inline-block;
 				font-style: italic;
 				margin: 0 0.35em 0 0.35em;
+				padding: 20px;
 			}
 
 				#nav > ul > li > ul {
@@ -2195,7 +2196,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin-bottom: 400px;
 	}
 	
 	#banner3 {
@@ -2425,6 +2426,8 @@ input, select, textarea {
 				padding: 6em 0;
 				margin: 3em 0 0 0;
 			}
+			
+			
 
 		/* Intro */
 
@@ -2514,7 +2517,7 @@ input, select, textarea {
 		/* Nav */
 
 			#nav {
-				display: none;
+				display: block;
 			}
 
 		/* Intro */
