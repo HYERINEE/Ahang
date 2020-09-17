@@ -8,8 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import baby.model.BabyMemberDAO;
 import baby.model.BabyMemberVO;
-import kr.mem.model.MemberDAO;
-import kr.mem.model.MemberVO;
+
 
 public class MemberUpdateController implements Controller{
 
@@ -29,7 +28,7 @@ public class MemberUpdateController implements Controller{
 		  vo.setBaby_age(baby_age);
 		  
 		  BabyMemberDAO dao= new BabyMemberDAO();
-		  int cnt = dao.mem
+		  int cnt = dao.memberupdate(vo);
 		  String page = null;
 		  if(cnt>0) {
 			  page = "redirect:"+cpath+"/list.do";

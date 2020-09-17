@@ -88,10 +88,21 @@ public class BabyMemberDAO {
 			}
 			return cnt;
 		}
-		public int memberupdate () {
+		public int memberupdate (BabyMemberVO vo) {
 			int cnt =0;
-			getConnect();
-			String sql ="update  set  id=?,";
+			conn=getConnect();
+			String sql ="update  테이블 이름  set  pw=? , hp=? , baby_age=?";
+			try {
+				conn.prepareStatement(sql);
+				psmt.setString(1, vo.getPw());
+				psmt.setInt(1, vo.getHp());
+				psmt.setInt(2, vo.getBaby_age());
+				
+				cnt=psmt.executeUpdate();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 			return cnt;
 		}
