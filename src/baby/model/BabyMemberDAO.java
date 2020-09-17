@@ -52,7 +52,7 @@ public class BabyMemberDAO {
 
 		getConnect();
 
-		String SQL = "insert into BabyMember values (?,?,?,?,?,?)";
+		String SQL = "insert into BabyMember values (?,?,?,?,?)";
 		int cnt = -1;
 
 		try {
@@ -77,18 +77,34 @@ public class BabyMemberDAO {
 	public int memberupdate(BabyMemberVO vo) {
 		int cnt = 0;
 		getConnect();
-		String sql = "update  테이블 이름  set  pw=? , hp=? ";
+		String sql = "update  BabyMember  set  pw=? , hp=? where id=?";
 		try {
-			conn.prepareStatement(sql);
+			psmt=conn.prepareStatement(sql);
 			psmt.setString(1, vo.getPw());
 			psmt.setInt(2, vo.getHp());
+			psmt.setString(3, vo.getId());
 
 			cnt = psmt.executeUpdate();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
+		}finally {
+			dbClose();
 		}
 
+		return cnt;
+	}
+	public int memberdelete(BabyMemberVO vo) {
+		int cnt =0;
+		String sql ="delete from BabyMember where id=?";
+		try {
+			psmt=conn.prepareStatement(sql);
+			psmt.setString(1, vo.getId());
+			cnt =psmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
 		return cnt;
 	}
 
