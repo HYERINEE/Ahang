@@ -21,6 +21,9 @@ public class BabyMemberVO {
 		this.baby_age = baby_age;
 	}
 
+	public BabyMemberVO() {
+		
+	}
 
 	public String getId() {
 		return id;

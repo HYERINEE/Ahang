@@ -88,5 +88,12 @@ public class BabyMemberDAO {
 			}
 			return cnt;
 		}
+		public int memberupdate () {
+			int cnt =0;
+			getConnect();
+			String sql ="update  set  id=?,";
+			
+			return cnt;
+		}
 
 }
