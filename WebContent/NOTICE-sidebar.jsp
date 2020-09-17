@@ -25,7 +25,7 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-
+					<li><a href="main.jsp">메인</a></li>
 					<li><a href="#">카테고리</a>
 						<ul>
 							<li><a href="#">워시</a></li>
@@ -34,7 +34,7 @@
 							<li><a href="#">오일</a></li>
 						</ul></li>
 
-				<li><a href="AGE-sidebar.jsp">연령대별 제품보기</a>
+					<li><a href="AGE-sidebar.jsp">연령대별 제품보기</a>
 						<ul>
 							<li><a href="#">0~6개월</a></li>
 							<li><a href="#">6~12개월</a></li>
