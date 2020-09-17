@@ -29,7 +29,7 @@
 			height: 30px;
 			width: 205px;
 			border-radius:5px;
-			background: :linear-gradient(to right, yellow, green);
+			background-color:#A9D7CA;
 		}
 	
 		input {

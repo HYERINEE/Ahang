@@ -45,7 +45,7 @@
                      <li><a href="#">민감성</a></li>
                   </ul></li>
                <li><a href="NOTICE-sidebar.jsp">리뷰</a></li>
-               <li class="current"><a href="login.jsp">login</a></li>
+               <li class="current"><a href="#" onclick="window.open('login_hj.jsp','_blank','width=400, height=500 top=200 left=250')">login</a></li>
             </ul>
          </nav>
          <!-- Logo 메인화면 이름-->
