@@ -23,7 +23,7 @@
          <nav id="nav">
             <ul>
                <li><a href="main.jsp">메인</a></li>
-               <li><a href="#">카테고리</a>
+               <li><a href="Category.jsp">카테고리</a>
                   <ul>
                      <li><a href="#">워시</a></li>
                      <li><a href="#">로션</a></li>
