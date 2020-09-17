@@ -71,7 +71,7 @@
 					<!-- Banner  가운데 배너-->
 						<section id="banner2">
 							<header>
-								<nav id="nav">
+								<nav id="nav2">
 							<ul>
 								<li>
 									<a href="Category.jsp">로션</a>

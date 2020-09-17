@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, menu, nav,nav2 output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav,nav2 section {
 	display: block;}
 
 body {
@@ -2085,8 +2085,16 @@ input, select, textarea {
 	#nav {
 		margin: 2.5em 0 2.5em 0;
 	}
+	
+	#nav {
+		margin: 2.5em 0 2.5em 0;
+	}
 
 		#nav > ul {
+			margin: 0px;
+		}
+		
+		#nav2 > ul {
 			margin: 0px;
 		}
 
@@ -2096,12 +2104,35 @@ input, select, textarea {
 				margin: 0 0.35em 0 0.35em;
 				padding: 20px;
 			}
+			
+			#nav2 > ul > li {
+				display: inline-block;
+				font-style: italic;
+				margin: 0 0.35em 0 0.35em;
+				padding: 60px;
+			}
 
 				#nav > ul > li > ul {
 					display: none;
 				}
+				
+				#nav2 > ul > li > ul {
+					display: none;
+				}
 
 				#nav > ul > li > a {
+					border-radius: 5px;
+					color: #5d5d5d;
+					text-decoration: none;
+					padding: 0.6em 1.2em 0.6em 1.2em;
+					-moz-transition: background-color .25s ease-in-out;
+					-webkit-transition: background-color .25s ease-in-out;
+					-ms-transition: background-color .25s ease-in-out;
+					transition: background-color .25s ease-in-out;
+					outline: 0;
+				}
+				
+				#nav2 > ul > li > a {
 					border-radius: 5px;
 					color: #5d5d5d;
 					text-decoration: none;
@@ -2517,6 +2548,10 @@ input, select, textarea {
 		/* Nav */
 
 			#nav {
+				display: block;
+			}
+			
+			#nav2 {
 				display: block;
 			}
 
