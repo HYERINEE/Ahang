@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html> 
+
 	<head>
 		<title>Dopetrope by HTML5 UP</title>
 		<meta charset="utf-8" />
@@ -22,7 +23,7 @@
 						<nav id="nav">
 							<ul>
 								<li>
-									<a href="#">카테고리</a>
+									<a href="Category.jsp">카테고리</a>
 									<ul>
 										<li><a href="#">워시</a></li>
 										<li><a href="#">로션</a></li>
@@ -55,7 +56,7 @@
 								</ul>
 								</li>
 								<li><a href="no-sidebar.jsp">리뷰</a></li>
-								<li class="current"><a href="login.jsp">login</a></li>
+								<li class="current "  ><input type="button" value="login"/></a></li>
 							</ul>
 						</nav>
 					<!-- Logo 메인화면 이름-->

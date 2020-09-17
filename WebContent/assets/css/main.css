@@ -2122,6 +2122,11 @@ input, select, textarea {
 					font-weight: 700;
 				}
 
+			#change{
+				width: 500px;
+				height: 500px;
+			
+			}
 	.dropotron {
 		border-radius: 5px;
 		background-color: #252122;
@@ -2174,6 +2179,27 @@ input, select, textarea {
 
 	#banner {
 		background: #CCE8F4 url("../../images/pic01.jpg");
+		background-position: center center;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+		padding: 8em 0;
+		margin: 4em 0 0 0;
+	}
+	#banner2 {
+		background: white;
+		background-position: center center;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+		padding: 8em 0;
+		margin: 4em 0 0 0;
+	}
+	
+	#banner3 {
+		background: green;
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;

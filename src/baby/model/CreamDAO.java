@@ -16,7 +16,7 @@ public class CreamDAO {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+			e.p5rintStackTrace();
 		}
 
 		String url = "jdbc:oracle:thin:@127.0.0.1:1521:XE";
