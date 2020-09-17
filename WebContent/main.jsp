@@ -50,7 +50,6 @@
 								<ul>
 										<li><a href="#">아토피</a></li>
 										<li><a href="#">알러지</a></li>
-										<li><a href="#">건성</a></li>
 										<li><a href="#">민감성</a></li>
 								</ul>
 								</li>
@@ -59,7 +58,7 @@
 							</ul>
 						</nav>
 					<!-- Logo 메인화면 이름-->
-						<h1><a href="main.jsp">김어항_아기안전본부</a></h1>
+						
 
 					<!-- Banner -->
 						<section id="banner">
