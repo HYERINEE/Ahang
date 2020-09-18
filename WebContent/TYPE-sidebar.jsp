@@ -26,7 +26,7 @@
 			<nav id="nav">
 				<ul>
 					<li><a href="main.jsp">메인</a></li>
-					<li><a href="#">카테고리</a>
+					<li><a href="Category.jsp">카테고리</a>
 						<ul>
 							<li><a href="#">워시</a></li>
 							<li><a href="#">로션</a></li>
@@ -53,7 +53,8 @@
 
 						</ul></li>
 					<li><a href="NOTICE-sidebar.jsp">리뷰</a></li>
-					<li class="current"><a href="login.jsp">login</a></li>
+					<li class="current"><a href="#"
+						onclick="window.open('login_hj.jsp','_blank','width=400, height=500 top=200 left=250')">login</a></li>
 
 				</ul>
 			</nav>
