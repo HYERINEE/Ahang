@@ -2080,22 +2080,24 @@ input, select, textarea {
 			line-height: 1;
 		}
 
+	#logo {
+		padding-right: 1000px;
+		padding-top: 200px;
+	}
 /* Nav */
 
 	#nav {
-		margin: 2.5em 0 2.5em 0;
+		margin: 0.5em  0.5em;
 	}
 	
-	#nav {
-		margin: 2.5em 0 2.5em 0;
-	}
+	
 
 		#nav > ul {
-			margin: 0px;
+			margin-right: 250px;
 		}
 		
 		#nav2 > ul {
-			margin: 0px;
+			margin: 1px;
 		}
 
 			#nav > ul > li {
@@ -2222,12 +2224,12 @@ input, select, textarea {
 	#banner2 {
 		background: white;
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: auto 50%;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		padding: 8em 0;
-		margin-bottom: 400px;
+		
+		margin-bottom: 800px;
 	}
 	
 	#banner3 {
@@ -2242,9 +2244,9 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: #8fd3f4;
+			
 			display: inline-block;
-			padding: 2.5em 5em;
+			
 			border-radius: 5px;
 		}
 
@@ -2456,6 +2458,10 @@ input, select, textarea {
 			#banner {
 				padding: 6em 0;
 				margin: 3em 0 0 0;
+			}
+			#banner2 {
+				padding: 2em 0;
+				
 			}
 			
 			
@@ -2939,6 +2945,10 @@ input, select, textarea {
 			#banner {
 				padding: 6em 0;
 				margin: 2em 0 0 0;
+			}
+			
+			#banner2 {
+				
 			}
 
 				#banner header {
