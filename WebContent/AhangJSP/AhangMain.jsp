@@ -38,10 +38,10 @@
 	<!-- 탑 메뉴 바 -로그인 회원가입 마이페이지 QnA -->
 	<ul class="top_menu_content_bar">
 
-		<il> <a href="">로그인</a></il>
-		<il> <a href="">회원가입</a></il>
-		<il> <a href="">마이페이지</a></il>
-		<il> <a href="">QnA</a></il>
+		<il> <a href="login_hj.jsp">로그인</a></il>
+		<il> <a href="join.jsp">회원가입</a></il>
+		<il> <a href="mypage.jsp">마이페이지</a></il>
+		<il> <a href="qna.jsp">QnA</a></il>
 
 	</ul>
 
