@@ -16,7 +16,7 @@
 <title>Dopetrope by HTML5 UP</title>
 <meta charset="utf-8" />
 <!--css 연결 시작 -->
-<link rel="stylesheet" href="../assets/css/Category.css" />
+<link rel="stylesheet" href="../assets/css/AhangMain.css" />
 <!--css 연결 끝 -->
 </head>
 
@@ -50,14 +50,18 @@
 
 			<ul>
 				<il> <a href="AhangMain.jsp">HOME</a></il>
+				 
 				<il> <a href="AhangCategory.jsp">카테고리</a>
+				
 				<ul>
 					<li><a href="#">워시</a></li>
 					<li><a href="#">오일</a></li>
 					<li><a href="#">로션</a></li>
 					<li><a href="#">크림</a></li>
 				</ul>
-				</il>
+			
+				
+				 	</il>
 				<il> <a href="AhangRank.jsp">안전등급별 제품</a>
 				<ul>
 					<li><a href="#">1등급</a></li>
@@ -72,7 +76,6 @@
 					<li><a href="#">민감성</a></li>
 				</ul>
 				</il>
-				<il> <a href="AhangReview.jsp">리뷰</a></il>
 			</ul>
 
 		</ul>
@@ -141,7 +144,7 @@
 					<header class="major">
 						<h2>성분비교 크리에이터 리뷰</h2>
 					</header>
-					<div class="row">
+					<div class="row2">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box">
 								<a href="#" class="image featured"><iframe width="400"
@@ -153,19 +156,12 @@
 									<h3>아기로션 5종추천드려요, 아기피부 촉촉하게 관리해보아요</h3>
 									<h2 align="center">[라토나베이비]</h2>
 								</header>
-								<p>겨울철 아이들 피부 관리 어떻게 하고 계신가요? 
-									오늘 영상은 제가 찌롱이한테 발라주고 있는 스킨케어
-									제품 5종 추천드려요 이번 영상은 2월 4일 라이브 방송 재편집본입니다 
-									
-									↓↓↓풀영상 보러가기↓↓↓
-									
-									https://youtu.be/9Ruqe2Xs2ew 
-									
-									#임신 #출산 #육아 #육아템 #스킨케어 #꿀피부 #몽디에스
-									#궁중비책 #마더케이 #아토팜 #아이수딩젤 #베이비로션 
-									
-									라토나 인스타그램 : www.instagram.com/latona02 
-									라토나 협찬 및 문의메일 : latona02@naver.com
+								<p>겨울철 아이들 피부 관리 어떻게 하고 계신가요? 오늘 영상은 제가 찌롱이한테 발라주고 있는 스킨케어
+									제품 5종 추천드려요 이번 영상은 2월 4일 라이브 방송 재편집본입니다 ↓↓↓풀영상 보러가기↓↓↓
+
+									https://youtu.be/9Ruqe2Xs2ew #임신 #출산 #육아 #육아템 #스킨케어 #꿀피부 #몽디에스
+									#궁중비책 #마더케이 #아토팜 #아이수딩젤 #베이비로션 라토나 인스타그램 :
+									www.instagram.com/latona02 라토나 협찬 및 문의메일 : latona02@naver.com
 									카카오톡 플러스친구 @라토나베이비 검색</p>
 								<footer>
 									<ul class="actions">
@@ -187,14 +183,10 @@
 									<h3>약사 엄마가 말하는 아기 로션 고르는 방법! 아기 제품 유해 성분 검출 주의하세요!</h3>
 									<h2 align="center">[시기월드]</h2>
 								</header>
-								<p>육아하는 엄마 #약사 #으니약사 가 직접 분석한 아기 로션 6종 성분 비교 분석!
-									아기 제품에서 유해성분 검출이 말이 됩니까!?
-									꼼꼼하게 따져보셔서 한층 더 더 현명한 엄마로 거듭나시길 바랍니다~ 
-									#아기로션 #아기제품 
-									
-									Paradise - Ikson Soundcloud :
-									https://soundcloud.com/ikson 
-									Music Playlist by
+								<p>육아하는 엄마 #약사 #으니약사 가 직접 분석한 아기 로션 6종 성분 비교 분석! 아기 제품에서
+									유해성분 검출이 말이 됩니까!? 꼼꼼하게 따져보셔서 한층 더 더 현명한 엄마로 거듭나시길 바랍니다~ #아기로션
+									#아기제품 Paradise - Ikson Soundcloud :
+									https://soundcloud.com/ikson Music Playlist by
 									http://reurl.kr/1992B2F2CW</p>
 								<footer>
 									<ul class="actions">
