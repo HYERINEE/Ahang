@@ -153,9 +153,56 @@ font-style: normal;
     font-style: normal;
 }
                     
-    #menu_side{
+    #menu_side il ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    }  
+    
+     #menu_side il ul il {
+   
+       
+   
+    background-color: gray;
+  
+   
+
+    } 
+    #menu_side il{
+    	padding-left:100px;  
+    }
+    
+     #menu_side  il :hover ul il{
+   
+       font-size:50px;
+  
+    display: block;
+   
+
+    } 
+    
+    
+      
+         #menu_side il            
+        #menu_side il{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+      
+    }  
+    
+    #first_window{
+    	
+    }
+               
+    #menu_side {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+   
     }                   
-            
+                       
 
 @media screen and (max-width :780px) {
 	.top_total

@@ -3,7 +3,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,8 +46,9 @@
 
 	<div>
 		<ul class="top_menu_content_bar_down">
-			<h1 style="margin-top: 0%; margin-left: 30px; margin-right: 50px; margin-bottom: 0px">傈眉皋春</h1>
-<!--  
+			<h1
+				style="margin-top: 0%; margin-left: 30px; margin-right: 50px; margin-bottom: 0px">傈眉皋春</h1>
+			<!--  
 			<ul id="first_menu">
 				<il> <a href="first_menu_choice">况矫</a>
 				
@@ -110,19 +110,83 @@
 	</table>
 </nav>
 
+<header style="margin-left: 200px;">
+<ul id="menu_side">
+	<il>
+	<a href="" class="load">牧刨明1</a>
+		<ul>
+			<p><il><a href="">牧刨明1-1</a></il></p>
+			<p><il><a href="">牧刨明1-2</a></il></p>
+			<p><il><a href="">牧刨明1-3</a></il></p>
+			<p><il><a href="">牧刨明1-4</a></il></p>
+		</ul>
 
-<ul id= "menu_side">
-	<il><a href="">牧刨明1</a></il> 
-	<il><a href="">牧刨明2</a></il> 
-	<il><a href="">牧刨明3</a></il> 
-	<il><a href="">牧刨明4</a></il> 
+	</il>
 	
+	<il>
+	<a href="" class="load">牧刨明2</a>
+		<ul>
+			<p><il><a href="">牧刨明1-1</a></il></p>
+			<p><il><a href="">牧刨明1-2</a></il></p>
+			<p><il><a href="">牧刨明1-3</a></il></p>
+			<p><il><a href="">牧刨明1-4</a></il></p>
+		</ul>
+
+	</il>
+	
+	
+	<il>
+	<a href=""  class="load">牧刨明3</a>
+		<ul>
+			<p><il><a href="">牧刨明1-1</a></il></p>
+			<p><il><a href="">牧刨明1-2</a></il></p>
+			<p><il><a href="">牧刨明1-3</a></il></p>
+			<p><il><a href="">牧刨明1-4</a></il></p>
+		</ul>
+
+	</il>
+	
+	
+	<il>
+	<a href=""  class="load">牧刨明4</a>
+		<ul>
+			<p><il><a href="">牧刨明1-1</a></il></p>
+			<p><il><a href="">牧刨明1-2</a></il></p>
+			<p><il><a href="">牧刨明1-3</a></il></p>
+			<p><il><a href="">牧刨明1-4</a></il></p>
+		</ul>
+
+	</il>
+	<!--  
+	<il><a href="">牧刨明2</a>
+	<ul>
+		<il><a href="">牧刨明2-1</a></il>
+		<il><a href="">牧刨明2-2</a></il>
+		<il><a href="">牧刨明2-3</a></il>
+		</ul>
+	</il> 
+	<il><a href="">牧刨明3</a>
+	<ul>
+		<il><a href="">牧刨明3-1</a></il>
+		<il><a href="">牧刨明3-2</a></il>
+		<il><a href="">牧刨明3-3</a></il>
+		</ul>
+	</il> 
+	<il><a href="">牧刨明4</a>
+	<ul>
+		<il><a href="">牧刨明4-1</a></il>
+		<il><a href="">牧刨明4-2</a></il>
+		<il><a href="">牧刨明4-3</a></il>
+		</ul>
+	</il> 
+	
+-->
 
 </ul>
 
 
+</header>
 
-
-
+<script src="AhabgCategory.js"></script>
 </body>
 </html>
