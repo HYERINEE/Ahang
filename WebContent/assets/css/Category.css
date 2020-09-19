@@ -1,0 +1,105 @@
+@charset "EUC-KR";
+body{
+   margin: 0;
+      font-family: 'TDTDTadakTadak';
+}
+
+.top_total{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(168,214,201)
+}
+.top_total2{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 3px;
+   border-bottom: 2px solid rgb(168,214,201);
+   
+   
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+hr{
+   background-color: #red;
+   color: #red;
+}
+
+.top_menu_content_bar_down > ul> il > a{
+   text-decoration: none;
+   color: black;
+   
+   
+   
+}
+
+.top_menu_content_bar{
+   position : absolute;
+   font-size: 24px;
+   color: white;
+   right: 10px;
+   top :80px;
+   
+}
+
+.top_menu_content_bar2{
+   position : absolute;
+   font-size: 24px;
+   color: black;
+   right: 10px;
+   top :80px;
+   
+}
+
+
+
+.top_menu_content_bar_down{
+   display : flex;
+   
+   font-size: 24px;
+   color: black;
+   margin-bottom: 0px;
+   
+   
+   
+}
+.top_menu_content_bar_down > ul> il{
+   margin-left: 50px;
+   justify-content: space-around;
+   
+   
+   
+}
+
+
+.top_menu_content_bar il{
+   font-size: 24px;
+   color: white;
+   padding: 8px 12px;
+}
+.top_menu_content_bar2 il{
+   font-size: 24px;
+   
+   padding: 8px 12px;
+}
+.top_menu_content_bar il:hover{
+   background-color: rgb(71,146,125);
+   border-radius: 4px;
+}
+.top_menu_content_bar_down ul  :hover {
+   background-color: gray;
+   border-radius: 4px;
+}
+
+@font-face {
+       font-family: 'TDTDTadakTadak';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/TDTDTadakTadak.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+   }
+@media  screen and (max-width :780px){
+   .top_total : column;
+}
