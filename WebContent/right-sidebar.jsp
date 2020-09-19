@@ -5,9 +5,25 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var teg =$("#movie")
+	$("#movie").mouseover(function(){
+		teg.stop().animate({height:'400px'},300);
+		
+});
+	$("#movie").mouseout(function(){
+		teg.stop().animate({height:'30px'},300);
+});
+	
+});
+
+</script>
 </head>
 <body>
 <head>
@@ -48,7 +64,7 @@
 		<ul class="top_menu_content_bar_down">
 			<h1
 				style="margin-top: 0%; margin-left: 30px; margin-right: 50px; margin-bottom: 0px">전체메뉴</h1>
-			<!--  
+			 <!--  
 			<ul id="first_menu">
 				<il> <a href="first_menu_choice">워시</a>
 				
@@ -110,10 +126,12 @@
 	</table>
 </nav>
 
-<header style="margin-left: 200px;">
+
+	<header id ="movie">
+<nav >
 <ul id="menu_side">
 	<il>
-	<a href="" class="load">컨텐츠1</a>
+	<a href="" class="load" id="test">컨텐츠1</a>
 		<ul>
 			<p><il><a href="">컨텐츠1-1</a></il></p>
 			<p><il><a href="">컨텐츠1-2</a></il></p>
@@ -157,6 +175,7 @@
 		</ul>
 
 	</il>
+
 	<!--  
 	<il><a href="">컨텐츠2</a>
 	<ul>
@@ -183,10 +202,10 @@
 -->
 
 </ul>
-
+</nav>
 
 </header>
 
-<script src="AhabgCategory.js"></script>
+
 </body>
 </html>

@@ -16,10 +16,10 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 3px;
+	
 	border-bottom: 2px solid rgb(168, 214, 201);
 	background-color:  rgb(168, 214, 201);
-	padding-bottom: 80px;
+	padding-bottom: 40px;
 	
 }
 top_menu_content_bar_down ul {
@@ -213,4 +213,18 @@ font-style: normal;
 	;
 	
 
+}
+
+header{
+	
+	height : 30px;
+	overflow: hidden;
+	background-color:  rgb(168, 214, 201);
+	text-align: center;
+	
+}
+
+header:hover{
+	
+	height: 400px;
 }
