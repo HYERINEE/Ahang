@@ -33,6 +33,7 @@
 		}
 	
 		input {
+			outline-style:none;
 			display:block;
 			margin:0 auto;
 			width:200px;
@@ -63,11 +64,11 @@
 		
 		<div>
 			<h1>Login</h1>
-			<input type="text" value="ID"/><br/>
-			<input type="password" value="PW"/><br>
+			<input type="text" placeholder="아이디 입력" required="required"/><br/>
+			<input type="password" placeholder="패스워드 입력" required="required"/><br>
 			<input type="submit" value="LOG IN" id="log"/>
 			
-			<p>회원이 아니신가요? <a href="#"> 회원가입 하기</a></p>
+			<p>회원이 아니신가요? <a href="join.jsp"> 회원가입 하기</a></p>
 			
 		</div>	
 	</form>
