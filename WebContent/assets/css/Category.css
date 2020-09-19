@@ -43,6 +43,8 @@ top_menu_content_bar_down ul {
 
 a {
 	text-decoration: none;
+	
+	
 }
 
 .top_menu_content_bar_down>ul>il>a {
@@ -232,4 +234,8 @@ header {
 
 header:hover {
 	height: 400px;
+}
+#moive{
+	font-size: 25px;
+	color: white;
 }
