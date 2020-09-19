@@ -9,7 +9,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(168, 214, 201)
+	background-color: white;
 }
 
 .top_total2 {
@@ -18,16 +18,24 @@ body {
 	align-items: center;
 	margin-bottom: 3px;
 	border-bottom: 2px solid rgb(168, 214, 201);
+	background-color: solid rgb(168, 214, 201);
 }
-
-#serch{
-position: absolute;
-
+top_menu_content_bar_down ul {
+	list-style: none;
+}
+.top_menu_content_bar_down ul il{
+	float: right;
+}
+#first_menu{
+	display: flex;
+}
+#first_menu_choice{
+	color: black;
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	
 }
 
 .top_menu_content_bar_down>ul>il>a {
