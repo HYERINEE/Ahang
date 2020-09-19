@@ -1,0 +1,146 @@
+@charset "EUC-KR";
+
+body {
+	margin: 0;
+	font-family: 'BBTreeGR';
+}
+
+.top_total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+
+.top_total2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3px;
+	border-bottom: 2px solid rgb(168, 214, 201);
+	background-color: rgb(168, 214, 201);
+	padding-bottom: 80px;
+}
+
+
+
+top_menu_content_bar_down ul {
+	list-style: none;
+}
+
+.top_menu_content_bar_down ul il {
+	float: right;
+}
+
+#first_menu {
+	display: flex;
+}
+
+#first_menu_choice {
+	color: black;
+}
+
+#first_menu_choice ul il {
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+.top_menu_content_bar_down>ul>il>a {
+	text-decoration: none;
+	color: black;
+}
+
+.top_menu_content_bar {
+	position: absolute;
+	font-size: 24px;
+	color: white;
+	right: 10px;
+	top: 80px;
+}
+
+.top_menu_content_bar2 {
+	position: absolute;
+	font-size: 24px;
+	color: black;
+	right: 10px;
+	top: 80px;
+}
+
+.top_menu_content_bar_down {
+	display: flex;
+	font-size: 24px;
+	color: black;
+	margin-bottom: 0px;
+}
+
+.top_menu_content_bar_down>ul>il {
+	margin-left: 50px;
+	justify-content: space-around;
+	margin-top: 80px;
+}
+
+.top_menu_content_bar il {
+	font-size: 24px;
+	color: white;
+	padding: 8px 12px;
+}
+
+.top_menu_content_bar2 il {
+	font-size: 24px;
+	padding: 8px 12px;
+}
+
+.top_menu_content_bar il:hover {
+	background-color: rgb(71, 146, 125);
+	border-radius: 4px;
+}
+
+
+
+section > :last-child, section:last-child, article > :last-child, article:last-child {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 70em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 70em;
+}
+
+#intro {
+    text-align: center;
+    overflow: hidden;
+    padding: 3em 0 0 0;
+}
+
+.row {
+	
+	display: flex;
+}
+
+
+@font-face {
+	font-family: 'BBTreeGR';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+#menu_side {
+	
+}
+
+@media screen and (max-width :780px) {
+	.top_total:
+	column;
+}
