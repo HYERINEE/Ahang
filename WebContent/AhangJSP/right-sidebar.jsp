@@ -73,44 +73,10 @@
 
 	<div>
 		<ul class="top_menu_content_bar_down">
-			<h1
-				style="margin-top: 0%; margin-left: 30px; margin-right: 50px; margin-bottom: 0px">전체메뉴</h1>
-
-			<ul>
-				<li class = "lii"> <a href="AhangMain.jsp">HOME</a></li>
-				 
-				<li class = "lii"> <a href="AhangCategory.jsp">카테고리</a>
-				
-				<ul>
-					<li><a href="#">워시</a></li>
-					<li><a href="#">오일</a></li>
-					<li><a href="#">로션</a></li>
-					<li><a href="#">크림</a></li>
-				</ul>
 			
-				
-				 	</li>
-				<li class = "lii" > <a href="AhangRank.jsp">안전등급별 제품</a>
-				<ul>
-					<li><a href="#">1등급</a></li>
-					<li><a href="#">2등급</a></li>
-					<li><a href="#">3등급</a></li>
-				</ul>
-				</li>
-				<li class = "lii"> <a href="AhangType.jsp">피부타입별 제품</a>
-				<ul>
-					<li><a href="#">알러지</a></li>
-					<li><a href="#">아토피</a></li>
-					<li><a href="#">민감성</a></li>
-				</ul>
-				</li>
-			</ul>
-
-		</ul>
 
 	</div>
 
-	<input type="text" id="serch" /><input type="button" value="검색" />
 
 </nav>
 
@@ -186,7 +152,8 @@
 <header id="movie">
 	<nav style="margin-left: 150px;">
 		<ul id="menu_side">
-			<il> <a href="" class="load" id="test">컨텐츠1</a>
+			<il> <a href="" class="load" id="test">HOME</a>
+			<!-- 
 			<ul>
 				<p>
 					<il> <a href="">컨텐츠1-1</a></il>
@@ -201,61 +168,57 @@
 					<il> <a href="">컨텐츠1-4</a></il>
 				</p>
 			</ul>
-
+ -->
 			</il>
 
-			<il> <a href="" class="load">컨텐츠2</a>
+			<il> <a href="" class="load">카테고리</a>
 			<ul>
-				<p>
-					<il> <a href="">컨텐츠1-1</a></il>
+				<p >
+					<il > <a href="">워시</a></il>
 				</p>
 				<p>
-					<il> <a href="">컨텐츠1-2</a></il>
+					<il> <a href="">오일</a></il>
 				</p>
 				<p>
-					<il> <a href="">컨텐츠1-3</a></il>
+					<il> <a href="">로션</a></il>
 				</p>
 				<p>
-					<il> <a href="">컨텐츠1-4</a></il>
+					<il> <a href="">크림</a></il>
 				</p>
 			</ul>
 
 			</il>
 
 
-			<il> <a href="" class="load">컨텐츠3</a>
+			<il> <a href="" class="load">안전등급별 제품</a>
 			<ul>
 				<p>
-					<il> <a href="">컨텐츠1-1</a></il>
+					<il> <a href="">1등급</a></il>
 				</p>
 				<p>
-					<il> <a href="">컨텐츠1-2</a></il>
+					<il> <a href="">2등급</a></il>
 				</p>
 				<p>
-					<il> <a href="">컨텐츠1-3</a></il>
+					<il> <a href="">3등급</a></il>
 				</p>
-				<p>
-					<il> <a href="">컨텐츠1-4</a></il>
-				</p>
+				
 			</ul>
 
 			</il>
 
 
-			<il> <a href="" class="load">컨텐츠4</a>
+			<il> <a href="" class="load">피부타입별 제품</a>
 			<ul>
 				<p>
-					<il> <a href="">컨텐츠1-1</a></il>
+					<il> <a href="">알러지</a></il>
 				</p>
 				<p>
-					<il> <a href="">컨텐츠1-2</a></il>
+					<il> <a href="">아토피</a></il>
 				</p>
 				<p>
-					<il> <a href="">컨텐츠1-3</a></il>
+					<il> <a href="">민감성</a></il>
 				</p>
-				<p>
-					<il> <a href="">컨텐츠1-4</a></il>
-				</p>
+				
 			</ul>
 
 			</il>
