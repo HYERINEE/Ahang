@@ -23,7 +23,8 @@
 <!-- Logo 시작 -->
 <nav class="top_total">
 	<div id="top_menu_bar" style="height: 150px;">
-		<a href=""> <img src="./AhangJSP/mainLogo.PNG" width="300" height="150" /></a>
+		<a href=""> <img src="./AhangJSP/mainLogo.PNG" width="300"
+			height="150" /></a>
 		<!-- Logo 끝 -->
 
 
@@ -46,42 +47,78 @@
 
 	<div>
 		<ul class="top_menu_content_bar_down">
-			<h1
-				style="margin-top: 0%; margin-left: 30px; margin-right: 50px; margin-bottom: 0px">전체메뉴</h1>
-
+			<h1 style="margin-top: 0%; margin-left: 30px; margin-right: 50px; margin-bottom: 0px">전체메뉴</h1>
+<!--  
 			<ul id="first_menu">
 				<il> <a href="first_menu_choice">워시</a>
-					<ul id ="">
-						<il><a herf="">테스트 1 </a></il>
-						<il><a herf="">테스트 2 </a></il>
-						<il><a herf="">테스트 3 </a></il>
-						
-					</ul>
-				</il>
-				<il> <a href="">로션</a></il>
-				<il> <a href="">오일</a></il>
-				<il> <a href="">크림</a></il>
-			</ul>
+				
+					<il><a herf="">테스트 1 </a></il>
+					
 
+			
+				</il>
+				<il> <a href="">로션</a>
+				<ul id="">
+					<il>
+					<a herf="">테스트 1 </a></il>
+					<il>
+					<a herf="">테스트 2 </a></il>
+					<il>
+					<a herf="">테스트 3 </a></il>
+
+				</ul>
+				
+				</il>
+				<il> <a href="">오일</a>
+				<ul id="">
+					<il>
+					<a herf="">테스트 1 </a></il>
+					<il>
+					<a herf="">테스트 2 </a></il>
+					<il>
+					<a herf="">테스트 3 </a></il>
+
+				</ul>
+
+				</il>
+				<il> <a href="">크림</a>
+				<ul id="">
+					<il>
+					<a herf="">테스트 1 </a></il>
+					<il>
+					<a herf="">테스트 2 </a></il>
+					<il>
+					<a herf="">테스트 3 </a></il>
+
+				</ul>
+
+				</il>
+			</ul>
+-->
 		</ul>
 
 	</div>
-	
-<table>
 
-<tr>
-<td>
+	<table>
 
-<input type="text" id="serch" style=" width: 400px; height: 50px;"/>
-<input type="button" value="검색" style="  height: 50px;"/>
-</td>
-</tr>
+		<tr>
+			<td><input type="text" id="serch"
+				style="width: 400px; height: 50px;" /> <input type="button"
+				value="검색" style="height: 50px;" /></td>
+		</tr>
 
-</table>
+	</table>
 </nav>
 
 
+<ul>
+	<il><a href="">컨텐츠1</a></il> 
+	<il><a href="">컨텐츠2</a></il> 
+	<il><a href="">컨텐츠3</a></il> 
+	<il><a href="">컨텐츠4</a></il> 
+	
 
+</ul>
 
 
 
