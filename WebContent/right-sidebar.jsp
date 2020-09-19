@@ -111,7 +111,7 @@
 </nav>
 
 
-<ul>
+<ul id= "menu_side">
 	<il><a href="">даеыцВ1</a></il> 
 	<il><a href="">даеыцВ2</a></il> 
 	<il><a href="">даеыцВ3</a></il> 
