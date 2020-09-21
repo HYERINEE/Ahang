@@ -48,22 +48,21 @@ public class NoticeDAO {
 		}
 	}
 
-	public int memberInsert(CreamVO vo) {
+	public int NoticeInsert(NoticeVO vo) {
 
 		getConnect();
 
-		String SQL = "insert into Cream values (?,?,?,?,?,?)";
+		String SQL = "insert into Notice values (?,?,?,?,?,?)";
 		int cnt = -1;
 
 		try {
-
 			psmt = conn.prepareStatement(SQL);
-			psmt.setInt(1, vo.getCream_num());
-			psmt.setString(2, vo.getModel_id());
-			psmt.setString(3, vo.getType());
-			psmt.setInt(4, vo.getProduct_baby_age());
-			psmt.setString(5, vo.getIngredient());
+			psmt.setInt(1, vo.getNotice_num());
+			psmt.setString(2, vo.getID());
+			psmt.setString(3, vo.getReview());
+			psmt.setInt(4, vo.getStar());
 			psmt.setString(5, vo.getBrand_id());
+			psmt.setString(5, vo.getModel_id());
 
 			cnt = psmt.executeUpdate();
 

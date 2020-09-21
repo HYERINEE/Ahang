@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class OilDAO {
+public class modelDAO {
 
 	private Connection conn;
 	private PreparedStatement psmt;
@@ -48,7 +48,7 @@ public class OilDAO {
 		}
 	}
 
-	public int memberInsert(CreamVO vo) {
+	public int memberInsert(modelVO vo) {
 
 		getConnect();
 
