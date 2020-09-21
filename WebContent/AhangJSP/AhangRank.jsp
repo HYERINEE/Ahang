@@ -89,25 +89,93 @@
 
 </nav>
 <!-- 상단메뉴바 5개-->
-<div class="menu">
-	<div class="menu1">
-		<ul class="menu2">
-			<li class="menu3">
-				<a href="" role="button" aria-current="true" aria-pressed="true">로션</a>
-			</li>
-			<li class="menu3">
-				<a href="" role="button" aria-current="true" aria-pressed="true">오일</a>
-			</li>
-			<li class="menu3">
-				<a href="" role="button" aria-current="true" aria-pressed="true">크림</a>
-			</li>
-			<li class="menu3">
-				<a href="" role="button" aria-current="true" aria-pressed="true">워시</a>
-			</li>
-			</ul>
-</div>
-</div>
+<div class="app">
+   <div class="swiper-container nav">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">a</div>
+         <div class="swiper-slide">b</div>
+         <div class="swiper-slide">c</div>
+         <div class="swiper-slide">d</div>
+         <div class="swiper-slide">e</div>
+      </div>
+   </div>
+   <div class="swiper-container view">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+            <div class="swiper-container content">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div>1</div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div>2</div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div>3</div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div>4</div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div>5</div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+               </div>
+               <div class="swiper-scrollbar"></div>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="swiper-container content">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div></div>
+                  </div>
+               </div>
+               <div class="swiper-scrollbar"></div>
+            </div>
+         </div>
 
+
+
+      </div>
+   </div>
+   <div class="bottom">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+   </div>
+</div>
 
 
 
