@@ -12,7 +12,6 @@ public class Total_modelVO {
 	private int sensitivity;
 	private String ingredient;
 	private double ingre_avg;
-	private String model_img;
 	private String filename;
 	private String filecontent;
 	
@@ -23,7 +22,7 @@ public class Total_modelVO {
 	
 	
 	public Total_modelVO(int num, String category, String brand_id, String model_id, int allergy, String allergy_ingre,
-			int atopy, int sensitivity, String ingredient, double ingre_avg, String model_img, String filename,
+			int atopy, int sensitivity, String ingredient, double ingre_avg, String filename,
 			String filecontent) {
 		super();
 		this.num = num;
@@ -36,7 +35,6 @@ public class Total_modelVO {
 		this.sensitivity = sensitivity;
 		this.ingredient = ingredient;
 		this.ingre_avg = ingre_avg;
-		this.model_img = model_img;
 		this.filename = filename;
 		this.filecontent = filecontent;
 	}
@@ -117,14 +115,7 @@ public class Total_modelVO {
 	public void setIngre_avg(double ingre_avg) {
 		this.ingre_avg = ingre_avg;
 	}
-	public String getModel_img() {
-		return model_img;
-	}
-	public void setModel_img(String model_img) {
-		this.model_img = model_img;
-	}
-	
-	
+
 	
 	
 }

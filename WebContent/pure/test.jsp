@@ -1,4 +1,5 @@
 
+<%@page import="baby.model.Total_modelVO"%>
 <%@page import="baby.model.BabyMemberDAO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -16,11 +17,15 @@
 
 		<%
 	 		BabyMemberDAO dao = new BabyMemberDAO();
-			total_modelVO vo = dao.memberAllList();
+			Total_modelVO vo = dao.memberAllList();
 			request.setAttribute("vo", vo); //${}»ç¿ë
 		
 		%>
 		<p>${vo.category}</p>
+		<p>${vo.filename}</p>
+		<p>${vo.filecontent}</p>
+		
+		<img src="./assets/prod/img_cream/cream_1.jpg">
 	
 
 </body>

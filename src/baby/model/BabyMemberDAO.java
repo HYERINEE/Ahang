@@ -132,12 +132,11 @@ public class BabyMemberDAO {
 				int sensitivity = rs.getInt(8);
 				String ingredient = rs.getString(9);
 				double ingre_avg = rs.getDouble(10);
-				String model_img = rs.getString(11);
-				String filename = rs.getString(12);
-				String filecontent = rs.getString(13);
+				String filename = rs.getString(11);
+				String filecontent = rs.getString(12);
 				
 				//¹­±â
-				vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, model_img, filename, filecontent);
+				vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
 				
 				
 			}
