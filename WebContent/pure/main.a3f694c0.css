@@ -5158,6 +5158,7 @@ border-color: red;
 	width: 2200px;
 }
 .controlls{
-	align-items: center;
+	text-align: center;
+	margin-top: 20px;
 }
 /*# sourceMappingURL=main.41beeca9.map*/
