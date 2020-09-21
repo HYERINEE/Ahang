@@ -5150,4 +5150,10 @@ textarea {
 	font-weight: normal;
 	font-style: normal;
 }
+
+.navbar-right {
+	float: right !important;
+	margin-right: -15px;
+}
+
 /*# sourceMappingURL=main.41beeca9.map*/
