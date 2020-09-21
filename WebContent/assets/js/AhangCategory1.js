@@ -15,5 +15,5 @@ var slide = document.querySelector('.slides'),
 		currentIdx =num;
 	}
 	nextBtn.addEventListener('click', function(){
-		moveSlide
+		moveSlide(currentIdx + 1);
 	});
