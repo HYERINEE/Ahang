@@ -23,21 +23,21 @@
 
 <link href="./Category.css" rel="stylesheet">
 <script type="text/javascript">
-$(document).ready(function() {
-	var teg = $("#btn")
-	$("#btn").click(function() {
-		teg.stop().animate({
-			height : '400px'
-		}, 300);
+	$(document).ready(function() {
+		var teg = $("#btn")
+		$("#btn").click(function() {
+			teg.stop().animate({
+				height : '400px'
+			}, 300);
+
+		});
+		$("#movie").click(function() {
+			teg.stop().animate({
+				height : '30px'
+			}, 300);
+		});
 
 	});
-	$("#movie").click(function() {
-		teg.stop().animate({
-			height : '30px'
-		}, 300);
-	});
-
-});
 </script>
 </head>
 
@@ -92,11 +92,10 @@ $(document).ready(function() {
 						<h1>안전합니다!</h1>
 					</div>
 					<div class="col-md-8 col-md-offset-2" style="padding-right: 5px">
-						<p> 각 제품의 성분들을 하나도 빠짐없이 취압하여 분석합니다. 
-						피부 타입별 민감도 분석 후 해로운 성분을 배제하고 </p>
-						<p class="text-center">또한 유리한 성분을 조합하여 유사한 성분을 함유 되어
-							있는 제품 정보를 제공해드립니다. 
-						</p>
+						<p>각 제품의 성분들을 하나도 빠짐없이 취압하여 분석합니다. 피부 타입별 민감도 분석 후 해로운 성분을
+							배제하고</p>
+						<p class="text-center">또한 유리한 성분을 조합하여 유사한 성분을 함유 되어 있는 제품 정보를
+							제공해드립니다.</p>
 					</div>
 				</div>
 			</div>
@@ -145,7 +144,7 @@ $(document).ready(function() {
 							n <span>/개</span>
 						</h6>
 					</div>
-					<div class="pricing-features"  id="">
+					<div class="pricing-features" id="">
 						<ul class="features" style="margin-bottom: 114px;">
 							<li>Gravida arcu ac tortor dignissim convallis aenean</li>
 							<li>Gravida arcu ac tortor dignissim convallis aenean</li>
@@ -173,157 +172,245 @@ $(document).ready(function() {
 						</ul>
 						<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
 					</div>
-					
-					
+
+
 				</div>
-				
+
 			</div>
 
 
 
 
-<div class="row row2" style="margin-top: 200px;overflow: hidden;">
+			<div class="row row2" style="margin-top: 200px; ">
+<input type="button" value="이전으로 " class="prev" id="back"> 
+				<ul id="slide">
+				
+				
+					<li class="col-md-4">
+					
+						<div class="pricing-card pricing-secondary">
+							<h3>상품분류1</h3>
+							<h6 class="price">
+								<span>상품이름</span>
+							</h6>
+						</div>
+						<div class="pricing-features" st>
+							<ul class="features">
+								<li>상품설명</li>
+								<li>상품성분</li>
 
-<ul id="slide" >
-				<li class="col-md-4">
-					<div class="pricing-card pricing-secondary">
-						<h3>상품분류1</h3>
-						<h6 class="price">
-							 <span>상품이름</span>
-						</h6>
-					</div>
-					<div class="pricing-features" st>
-						<ul class="features">
-							<li>상품설명</li>
-							<li>상품성분</li>
-							
-						</ul>
-						<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
-					</div>
-				</li>
-				
-				
-			
-				<li class="col-md-4">
-					<div class="pricing-card pricing-secondary">
-					<h3>상품분류2</h3>
-						<h6 class="price">
-							 <span>상품이름</span>
-						</h6>
-					</div>
-					<div class="pricing-features" st>
-						<ul class="features">
-							<li>상품설명</li>
-							<li>상품성분</li>
-						</ul>
-						<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
-					</div>
-				</li>
-				
-				
-				<li class="col-md-4">
-					<div class="pricing-card pricing-secondary">
-						<h3>상품분류3</h3>
-						<h6 class="price">
-							 <span>상품이름</span>
-						</h6>
-					</div>
-					<div class="pricing-features" st>
-						<ul class="features">
-							<li>상품설명</li>
-							<li>상품성분</li>
-						</ul>
-						<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
-					</div>
-				</li>
-				
-				
-				<li class="col-md-4">
-					<div class="pricing-card pricing-secondary">
-						<h3>상품분류4</h3>
-						<h6 class="price">
-							 <span>상품이름</span>
-						</h6>
-					</div>
-					<div class="pricing-features" st>
-						<ul class="features">
-							<li>상품설명</li>
-							<li>상품성분</li>
-						</ul>
-						<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
-					</div>
-			
-</ul>
-
-</div>
-<p class="controlls">
-<input type="button" value="이전으로 " class="prev" >
-<input type="button" value="다음으로 " class="next">
-</p>
-<div class="row" >
+							</ul>
+							<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
+						</div>
+					</li>
 
 
-<div class="row section-container-spacer"  >
-				<div class="col-xs-12">
-					<div class="text-center" style=" margin-top: 300px;">
+
+					<li class="col-md-4">
+						<div class="pricing-card pricing-secondary">
+							<h3>상품분류2</h3>
+							<h6 class="price">
+								<span>상품이름</span>
+							</h6>
+						</div>
+						<div class="pricing-features" st>
+							<ul class="features">
+								<li>상품설명</li>
+								<li>상품성분</li>
+							</ul>
+							<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
+						</div>
+					</li>
+
+
+					<li class="col-md-4">
+						<div class="pricing-card pricing-secondary">
+							<h3>상품분류3</h3>
+							<h6 class="price">
+								<span>상품이름</span>
+							</h6>
+						</div>
+						<div class="pricing-features" st>
+							<ul class="features">
+								<li>상품설명</li>
+								<li>상품성분</li>
+							</ul>
+							<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
+						</div>
+					</li>
+
+
+					<li class="col-md-4">
+						<div class="pricing-card pricing-secondary">
+							<h3>상품분류4</h3>
+							<h6 class="price">
+								<span>상품이름</span>
+							</h6>
+						</div>
+						<div class="pricing-features" st>
+							<ul class="features">
+								<li>상품설명</li>
+								<li>상품성분</li>
+							</ul>
+							<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
+						</div>
+					</li>
 					
 					
-						<h1>원하시는 상품이 없나요?</h1>
-					</div>
-					<div class="col-md-8 col-md-offset-2" style="padding-right: 5px">
-						<p> 귀하의  제품을 알려주세요 , 데이터 취합 후 빠른 시일에 제품이 추가가 됩니다!  
-						피부 타입별 민감도 분석 후 해로운 
-						<p style="text-align: center;"> 성분을 배제하고  또한 유리한 성분을 조합하여 유사한 성분을 함유 되어
-							있는 제품 정보를 제공해드립니다.</p>
-						
+					
+					<input type="button" value="다음으로 " class="next" id="back">
+				</ul>
+
+			</div>
+			<p class="controlls">
+				
+				
+			</p>
+			<div class="row">
+
+
+				<div class="row section-container-spacer">
+					<div class="col-xs-12">
+						<div class="text-center" style="margin-top: 300px;">
+
+
+							<h1>원하시는 상품이 없나요?</h1>
+						</div>
+						<div class="col-md-8 col-md-offset-2" style="padding-right: 5px">
+							<p>귀하의 제품을 알려주세요 , 데이터 취합 후 빠른 시일에 제품이 추가가 됩니다! 피부 타입별 민감도 분석
+								후 해로운
+							<p style="text-align: center;">성분을 배제하고 또한 유리한 성분을 조합하여 유사한
+								성분을 함유 되어 있는 제품 정보를 제공해드립니다.</p>
+
+						</div>
 					</div>
 				</div>
+
+
 			</div>
 
+			<div class="row" style="margin-top: 200px;">
 
-</div>
 
-	<div class="row" style="margin-top: 200px;">
-	
-		
-	<div class="col-md-4">
-					<div class="pricing-card pricing-secondary" style="width: 1100px;height: 1100px;">
+				<div class="col-md-4">
+					<div class="pricing-card pricing-secondary"
+						style="width: 1100px; height: 1100px;">
 						<h1 style="color: white;">알려주세요!</h1>
 						<h6 class="price">
-							 <span>제품 이름</span>
-							 <div class="form-group">
-							<div class="input-group" style="width: 700px ;left: 200px; position: absolute;">
-								<input type="text" class="form-control footer-input-text">
-								<div class="input-group-btn">
-									<button type="button" class="btn btn-primary btn-newsletter ">OK</button>
+							<span>제품 이름</span>
+							<div class="form-group">
+								<div class="input-group"
+									style="width: 700px; left: 200px; position: absolute;">
+									<input type="text" class="form-control footer-input-text">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-primary btn-newsletter ">OK</button>
+									</div>
 								</div>
 							</div>
-						</div>
-						
-						<span>제조 회사</span>
-							 <div class="form-group"  style="width: 700px; left: 200px; position: absolute;">
-							<div class="input-group">
-								<input type="text" class="form-control footer-input-text">
-								<div class="input-group-btn">
-									<button type="button" class="btn btn-primary btn-newsletter ">OK</button>
-								</div>
-							</div>
-						</div>
-							 
-						</h6>
-						<img src="choice.png " style="position:absolute;position:absolute;height: 700px;width: 700px;right: -300;top: 500px;left: 300\;left: 300px;left: 210px;height: 700px;width: 700px;"/>
-					</div>
-					
-					
-					
-				</div>
-	
-	
-	</div>
 
+							<span>제조 회사</span>
+							<div class="form-group"
+								style="width: 700px; left: 200px; position: absolute;">
+								<div class="input-group">
+									<input type="text" class="form-control footer-input-text">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-primary btn-newsletter ">OK</button>
+									</div>
+								</div>
+							</div>
+
+						</h6>
+						<img src="choice.png "
+							style="position: absolute; position: absolute; height: 700px; width: 700px; right: -300; top: 500px; left: 300\;left: 300px; left: 210px; height: 700px; width: 700px;" />
+					</div>
+
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+<!-- -------------------------------
+	
+	
+	
+		<div id="carouselExampleIndicators" class="carousel slide"
+			data-ride="carousel">
+
+			<div class="carousel-inner" r="listbox">
+				<div class="item active">
+					<li class="img-responsive" alt="First slide">
+						<div class="pricing-card pricing-secondary">
+							<h3>상품분류4</h3>
+							<h6 class="price">
+								<span>상품이름</span>
+							</h6>
+						</div>
+						<div class="pricing-features" st>
+							<ul class="features">
+								<li>상품설명</li>
+								<li>상품성분</li>
+							</ul>
+							<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
+						</div>
+					</li>
+				</div>
+				
+				<div class="item">
+				<li class="img-responsive" alt="Second slide">
+						<div class="pricing-card pricing-secondary">
+							<h3>상품분류5</h3>
+							<h6 class="price">
+								<span>상품이름</span>
+							</h6>
+						</div>
+						<div class="pricing-features" st>
+							<ul class="features">
+								<li>상품설명</li>
+								<li>상품성분</li>
+							</ul>
+							<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
+						</div>
+					</li>
+				</div>
+				<div class="item">
+				<li class="img-responsive" alt="Third slide">
+						<div class="pricing-card pricing-secondary">
+							<h3>상품분류6</h3>
+							<h6 class="price">
+								<span>상품이름</span>
+							</h6>
+						</div>
+						<div class="pricing-features" st>
+							<ul class="features">
+								<li>상품설명</li>
+								<li>상품성분</li>
+							</ul>
+							<a href="contact.html" class="btn btn-primary" title="">둘러보기</a>
+						</div>
+					</li>
+				</div>
+			</div>
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0"
+					class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
 		</div>
 		
 		
+		--------------------------------------------->
+		
+		
+		
 		
 		
 		
@@ -335,60 +422,58 @@ $(document).ready(function() {
 		
 		
 	</div>
-
-
 	<footer>
 		<div class="section-container footer-container">
 			<div class="container">
 				<div class="row">
-				<div id="slide_menu" >
-					<div class="col-md-4">
-						<h4>About us</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Nunc sit amet consectetur dolor</p>
-					</div>
-
-					<div class="col-md-4">
-						<h4>Do you like ? Share this !</h4>
-						<p>
-							<a href="https://facebook.com/"
-								class="social-round-icon white-round-icon fa-icon" title="">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a> <a href="https://twitter.com/"
-								class="social-round-icon white-round-icon fa-icon" title="">
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-							</a> <a href="https://www.linkedin.com/"
-								class="social-round-icon white-round-icon fa-icon" title="">
-								<i class="fa fa-linkedin" aria-hidden="true"></i>
-							</a>
-						</p>
-						<p>
-							<small>© Untitled | Website created with <a
-								href="http://www.mashup-template.com/" class="link-like-text"
-								title="Create website with free html template">Mashup
-									Template</a>/<a href="http://www.unsplash.com/"
-								class="link-like-text" title="Beautiful Free Images">Unsplash</a></small>
-						</p>
-					</div>
-
-					<div class="col-md-4">
-						<h4>Subscribe to newsletter</h4>
-
-						<div class="form-group">
-							<div class="input-group">
-								<input type="text" class="form-control footer-input-text">
-								<div class="input-group-btn">
-									<button type="button" class="btn btn-primary btn-newsletter ">OK</button>
-								</div>
-							</div>
+					<div id="slide_menu">
+						<div class="col-md-4">
+							<h4>About us</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Nunc sit amet consectetur dolor</p>
 						</div>
 
+						<div class="col-md-4">
+							<h4>Do you like ? Share this !</h4>
+							<p>
+								<a href="https://facebook.com/"
+									class="social-round-icon white-round-icon fa-icon" title="">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a> <a href="https://twitter.com/"
+									class="social-round-icon white-round-icon fa-icon" title="">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a> <a href="https://www.linkedin.com/"
+									class="social-round-icon white-round-icon fa-icon" title="">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</p>
+							<p>
+								<small>© Untitled | Website created with <a
+									href="http://www.mashup-template.com/" class="link-like-text"
+									title="Create website with free html template">Mashup
+										Template</a>/<a href="http://www.unsplash.com/"
+									class="link-like-text" title="Beautiful Free Images">Unsplash</a></small>
+							</p>
+						</div>
 
+						<div class="col-md-4">
+							<h4>Subscribe to newsletter</h4>
+
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control footer-input-text">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-primary btn-newsletter ">OK</button>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						</ul>
 					</div>
-				</ul>
 				</div>
 			</div>
-		</div>
 	</footer>
 
 	<script>
@@ -411,7 +496,7 @@ $(document).ready(function() {
 </script>
 
 -->
-	
+
 	<script type="text/javascript" src="./main.41beeca9.js"></script>
 	<script src="./js/AhangCategory1.js"></script>
 </body>
