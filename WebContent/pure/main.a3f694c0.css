@@ -11,7 +11,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-	font-family: sans-serif;
+	font-family: BBTreeGR;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
@@ -843,7 +843,7 @@ pre code {
 }
 
 .col-xs-4 {
-	width: 30%
+	width: 33.33333%
 }
 
 .col-xs-5 {
@@ -1209,7 +1209,7 @@ pre code {
 		width: 25%
 	}
 	.col-md-4 {
-		width: 25%
+		width: 33.33333%;
 	}
 	.col-md-5 {
 		width: 41.66667%
@@ -1904,8 +1904,7 @@ input[type=search] {
 	.radio-inline input[type=radio], .radio input[type=radio] {
 	position: absolute;
 	margin-left: -20px;
-	margin-top: 4px\9
-
+	margin-top: 4px\9
 }
 
 .checkbox+.checkbox, .radio+.radio {
@@ -2388,14 +2387,9 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-primary {
-	
-    margin-left: 60px;
-  
-
 	color: #fff;
 	background-color: #8b62ff;
 	border-color: #8b62ff
-	
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -4962,7 +4956,6 @@ blockquote small:before {
 .features {
 	padding-left: 40px;
 	list-style: none
-
 }
 
 .features li {
@@ -5055,6 +5048,7 @@ blockquote small:before {
 
 .btn-primary, .btn-primary:hover {
 	background-image: linear-gradient(90deg, #A9D7CA, #3b1bff);
+	border-radius: 12px;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF8B62FF",
 		endColorstr="#FF3B1BFF", GradientType=1)
@@ -5148,22 +5142,6 @@ textarea {
 	max-width: 100%
 }
 
-
-#slide_menu{
-position: absolute;
-
-height: 800px;
-width: 800px;
-border-color: red;	
-}
-#slide{
-	width: 2200px;
-}
-.controlls{
-	text-align: center;
-	margin-top: 20px;
-}
-
 @font-face {
 	font-family: 'BBTreeGR';
 	src:
@@ -5177,6 +5155,5 @@ border-color: red;
 	float: right !important;
 	margin-right: -15px;
 }
-
 
 /*# sourceMappingURL=main.41beeca9.map*/
