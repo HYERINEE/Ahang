@@ -1198,6 +1198,7 @@ pre code {
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
 		.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
 		float: left
+		
 	}
 	.col-md-1 {
 		width: 8.33333%
@@ -1209,7 +1210,8 @@ pre code {
 		width: 25%
 	}
 	.col-md-4 {
-		width: 33.33333%
+		width: 33.33333%;
+		
 	}
 	.col-md-5 {
 		width: 41.66667%
@@ -5155,5 +5157,7 @@ textarea {
 	float: right !important;
 	margin-right: -15px;
 }
+
+
 
 /*# sourceMappingURL=main.41beeca9.map*/
