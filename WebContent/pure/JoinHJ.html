@@ -18,15 +18,20 @@ body {
 
 div {
 	position: absolute;
-	top: 20%;
-	left: 35%;
-	right : 20%;
+	top: 23.5%;
+	left: 9%;
+	right : 10%;
 	background: white;
 	border-radius: 15px;
-	height: 500px;
-	width: 360px;
-	margin-left: -50px;
+	height: 450px;
 	margin-top: -100px;
+	
+}
+
+table{
+	margin-left: 20%;
+	border-collapse: separate;
+	border-spacing: 0 12px;
 }
 
 #join {
@@ -59,16 +64,40 @@ input {
 		<div>
 			<h1>회원가입</h1>
 
-			<input type="text" placeholder="아이디 입력" required="required" /><br />
-			<input type="password" placeholder="패스워드 입력" required="required" /><br>
-			<input type="text" placeholder="이름 입력" required="required" /><br />
-			<input type="number" placeholder="나이 입력" required="required" /><br />
-			<input type="text" placeholder="전화번호 입력" required="required" /><br />
-			<input type="submit" value="가입하기" id="join" />
+			<table>
 
+			<tr>
+				<td>
+					<input type="text" placeholder="아이디 입력" required="required" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="password" placeholder="패스워드 입력" required="required" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="text" placeholder="이름 입력" required="required" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="number" placeholder="나이 입력" required="required" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="text" placeholder="전화번호 입력" required="required" /><br />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="submit" value="가입하기" id="join" />
+				</td>
+			</tr>
 
-
-
+			</table>
 
 		</div>
 	</form>
