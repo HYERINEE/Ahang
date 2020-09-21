@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 
 public class BabyMemberDAO {
 
@@ -108,4 +110,49 @@ public class BabyMemberDAO {
 		return cnt;
 	}
 
+	public Total_modelVO memberAllList() {
+		conn = getConnect();
+		Total_modelVO vo=null;
+		
+		String sql = "select * from total_model where num=1";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			if (rs.next()) {
+				
+				int num = rs.getInt(1);
+				String category= rs.getString(2);
+				String brand_id = rs.getString(3);
+				String model_id = rs.getString(4);
+				int allergy = rs.getInt(5);
+				String allergy_ingre = rs.getString(6);
+				int atopy = rs.getInt(7);
+				int sensitivity = rs.getInt(8);
+				String ingredient = rs.getString(9);
+				double ingre_avg = rs.getDouble(10);
+				String model_img = rs.getString(11);
+				String filename = rs.getString(12);
+				String filecontent = rs.getString(13);
+				
+				//¹­±â
+				vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, model_img, filename, filecontent);
+				
+				
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			dbClose();
+		}
+		return vo;
+		
+	}
+	
+	
+	
+	
 }
