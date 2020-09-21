@@ -17,7 +17,8 @@ html {
 }
 
 body {
-	margin: 0
+	margin: 0;
+	font-family: 'BBTreeGR';
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup,
@@ -1904,6 +1905,7 @@ input[type=search] {
 	position: absolute;
 	margin-left: -20px;
 	margin-top: 4px\9
+
 }
 
 .checkbox+.checkbox, .radio+.radio {
@@ -5052,7 +5054,6 @@ blockquote small:before {
 }
 
 .btn-primary, .btn-primary:hover {
-	
 	background-image: linear-gradient(90deg, #A9D7CA, #3b1bff);
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF8B62FF",
@@ -5147,6 +5148,7 @@ textarea {
 	max-width: 100%
 }
 
+<<<<<<< HEAD
 #slide_menu{
 position: absolute;
 
@@ -5161,4 +5163,20 @@ border-color: red;
 	text-align: center;
 	margin-top: 20px;
 }
+
+@font-face {
+	font-family: 'BBTreeGR';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.navbar-right {
+	float: right !important;
+	margin-right: -15px;
+}
+
+
 /*# sourceMappingURL=main.41beeca9.map*/
