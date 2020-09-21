@@ -13,12 +13,19 @@ public class Total_modelVO {
 	private String ingredient;
 	private double ingre_avg;
 	private String model_img;
+	private String filename;
+	private String filecontent;
 	
 
 	
-	public Total_modelVO(int num, String category, String brand_id, String model_id, int allergy, String allergy_ingre,
-			int atopy, int sensitivity, String ingredient, double ingre_avg, String model_img) {
 	
+	
+	
+	
+	public Total_modelVO(int num, String category, String brand_id, String model_id, int allergy, String allergy_ingre,
+			int atopy, int sensitivity, String ingredient, double ingre_avg, String model_img, String filename,
+			String filecontent) {
+		super();
 		this.num = num;
 		this.category = category;
 		this.brand_id = brand_id;
@@ -30,10 +37,26 @@ public class Total_modelVO {
 		this.ingredient = ingredient;
 		this.ingre_avg = ingre_avg;
 		this.model_img = model_img;
+		this.filename = filename;
+		this.filecontent = filecontent;
 	}
 	
-	
-	
+	public String getFilename() {
+		return filename;
+	}
+
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+
+	public String getFilecontent() {
+		return filecontent;
+	}
+
+	public void setFilecontent(String filecontent) {
+		this.filecontent = filecontent;
+	}
+
 	public int getNum() {
 		return num;
 	}
