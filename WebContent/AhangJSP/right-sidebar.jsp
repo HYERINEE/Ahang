@@ -19,8 +19,8 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-		var teg = $("#movie")
-		$("#movie").mouseover(function() {
+		var teg = $("#btn")
+		$("#btn").mouseover(function() {
 			teg.stop().animate({
 				height : '400px'
 			}, 300);
@@ -148,7 +148,7 @@
 	</table>
 </nav>
 
-
+<input type="button" id="btn">
 <header id="movie">
 	<nav style="margin-left: 150px;">
 		<ul id="menu_side">

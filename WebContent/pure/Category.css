@@ -5158,6 +5158,7 @@ border-color: red;
 }
 #slide{
 	width: 2200px;
+	transition: 0.5s ease-out;
 }
 .controlls{
 	text-align: center;

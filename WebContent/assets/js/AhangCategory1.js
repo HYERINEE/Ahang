@@ -1,3 +1,6 @@
+
+$(function(){
+
 var slide = document.querySelector('.slides'),
 	slide1 = document.querySelecttorAll('.slides li'),
 	
@@ -17,3 +20,5 @@ var slide = document.querySelector('.slides'),
 	nextBtn.addEventListener('click', function(){
 		moveSlide(currentIdx + 1);
 	});
+	
+});
