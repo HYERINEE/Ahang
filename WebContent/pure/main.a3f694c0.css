@@ -843,7 +843,7 @@ pre code {
 }
 
 .col-xs-4 {
-	width: 33.33333%
+	width: 30%
 }
 
 .col-xs-5 {
@@ -1198,7 +1198,6 @@ pre code {
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
 		.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
 		float: left
-		
 	}
 	.col-md-1 {
 		width: 8.33333%
@@ -1210,8 +1209,7 @@ pre code {
 		width: 25%
 	}
 	.col-md-4 {
-		width: 33.33333%;
-		
+		width: 25%
 	}
 	.col-md-5 {
 		width: 41.66667%
@@ -2390,9 +2388,14 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-primary {
+	
+    margin-left: 60px;
+  
+
 	color: #fff;
 	background-color: #8b62ff;
 	border-color: #8b62ff
+	
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -4959,6 +4962,7 @@ blockquote small:before {
 .features {
 	padding-left: 40px;
 	list-style: none
+
 }
 
 .features li {
@@ -5144,6 +5148,22 @@ textarea {
 	max-width: 100%
 }
 
+
+#slide_menu{
+position: absolute;
+
+height: 800px;
+width: 800px;
+border-color: red;	
+}
+#slide{
+	width: 2200px;
+}
+.controlls{
+	text-align: center;
+	margin-top: 20px;
+}
+
 @font-face {
 	font-family: 'BBTreeGR';
 	src:
@@ -5157,7 +5177,6 @@ textarea {
 	float: right !important;
 	margin-right: -15px;
 }
-
 
 
 /*# sourceMappingURL=main.41beeca9.map*/
