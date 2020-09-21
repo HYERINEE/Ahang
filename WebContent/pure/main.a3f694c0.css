@@ -842,7 +842,7 @@ pre code {
 }
 
 .col-xs-4 {
-	width: 33.33333%
+	width: 30%
 }
 
 .col-xs-5 {
@@ -1208,7 +1208,7 @@ pre code {
 		width: 25%
 	}
 	.col-md-4 {
-		width: 33.33333%
+		width: 25%
 	}
 	.col-md-5 {
 		width: 41.66667%
@@ -2386,9 +2386,14 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-primary {
+	
+    margin-left: 60px;
+  
+
 	color: #fff;
 	background-color: #8b62ff;
 	border-color: #8b62ff
+	
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -4955,6 +4960,7 @@ blockquote small:before {
 .features {
 	padding-left: 40px;
 	list-style: none
+
 }
 
 .features li {
@@ -5139,5 +5145,19 @@ blockquote small:before {
 
 textarea {
 	max-width: 100%
+}
+
+#slide_menu{
+position: absolute;
+
+height: 800px;
+width: 800px;
+border-color: red;	
+}
+#slide{
+	width: 2200px;
+}
+.controlls{
+	align-items: center;
 }
 /*# sourceMappingURL=main.41beeca9.map*/
