@@ -69,12 +69,8 @@
 			
 				
 				 	</li>
-				<li class = "lii" > <a href="AhangRank.jsp">안전등급별 제품</a>
-				<ul>
-					<li><a href="#">1등급</a></li>
-					<li><a href="#">2등급</a></li>
-					<li><a href="#">3등급</a></li>
-				</ul>
+				<li class = "lii" > <a href="AhangRank.jsp">안전성분 제품</a>
+
 				</li>
 				<li class = "lii"> <a href="AhangType.jsp">피부타입별 제품</a>
 				<ul>
@@ -92,7 +88,25 @@
 	<input type="text" id="serch" /><input type="button" value="검색" />
 
 </nav>
-
+<!-- 상단메뉴바 5개-->
+<div class="menu">
+	<div class="menu1">
+		<ul class="menu2">
+			<li class="menu3">
+				<a href="" role="button" aria-current="true" aria-pressed="true">로션</a>
+			</li>
+			<li class="menu3">
+				<a href="" role="button" aria-current="true" aria-pressed="true">오일</a>
+			</li>
+			<li class="menu3">
+				<a href="" role="button" aria-current="true" aria-pressed="true">크림</a>
+			</li>
+			<li class="menu3">
+				<a href="" role="button" aria-current="true" aria-pressed="true">워시</a>
+			</li>
+			</ul>
+</div>
+</div>
 
 
 

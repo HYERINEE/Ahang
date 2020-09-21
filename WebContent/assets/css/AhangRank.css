@@ -97,6 +97,26 @@ a {
 	background-color: rgb(71, 146, 125);
 	border-radius: 4px;
 }
+.menu {
+    margin-top: 22px;
+    text-align: center;
+}
+.menu1 .menu2 {
+    margin: 0 -5px;
+}
+ul, ol {
+    list-style: none;
+}
+.menu1 .menu3 {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+}
+.menu1 .[aria-pressed=true] {
+    background-color: #ff5f43;
+    border: 1px solid #ff5f43;
+    color: #fff;
+}
 
 
 
