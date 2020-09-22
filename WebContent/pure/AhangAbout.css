@@ -876,6 +876,7 @@ pre code {
 
 .col-xs-12 {
 	width: 100%
+	
 }
 
 .col-xs-pull-0 {
@@ -5156,5 +5157,9 @@ textarea {
 	float: right !important;
 	margin-right: -15px;
 }
+
+@font-face { font-family: 'ImcreSoojin'; 
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff'); 
+font-weight: normal; font-style: normal; }
 
 /*# sourceMappingURL=main.41beeca9.map*/
