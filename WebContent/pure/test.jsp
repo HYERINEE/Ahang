@@ -22,13 +22,14 @@
 		
 		%>
 		<p>${vo.category}</p>
-		<p>${vo.filename}</p>
-		<p>${vo.filecontent}</p>
+		<p>${vo.filecontent}${vo.filename}</p>
+		<p></p>
+		
+		
 		
 		<img src="./assets/prod/img_cream/cream_1.jpg">
+		<img src="${vo.filecontent}${vo.filename}">
 	
-		<img src="${vo.filecontent}+${vo.filename}">
-	
-
+		
 </body>
 </html>

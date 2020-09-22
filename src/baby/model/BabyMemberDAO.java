@@ -79,7 +79,7 @@ public class BabyMemberDAO {
 	public int memberupdate(BabyMemberVO vo) {
 		int cnt = 0;
 		getConnect();
-		String sql = "update  BabyMember  set  pw=? , hp=? where id=?";
+		String sql = "update BabyMember set pw=? , hp=? where id=?";
 		try {
 			psmt=conn.prepareStatement(sql);
 			psmt.setString(1, vo.getPw());
@@ -142,13 +142,6 @@ public class BabyMemberDAO {
 		
 		return list;
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	public Total_modelVO memberAllList() {
 		getConnect();
