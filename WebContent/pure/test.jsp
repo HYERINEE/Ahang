@@ -27,6 +27,8 @@
 		
 		<img src="./assets/prod/img_cream/cream_1.jpg">
 	
+		<img src="${vo.filecontent}+${vo.filename}">
+	
 
 </body>
 </html>

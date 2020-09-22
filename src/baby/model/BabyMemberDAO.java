@@ -112,8 +112,8 @@ public class BabyMemberDAO {
 	}
 
 	public ArrayList<BabyMemberVO> memberlogin(String id_o, String pw_o) {
-		int cnt = 0;
-		ArrayList<BabyMemberVO> list = null;
+		//int cnt = 0;
+		ArrayList<BabyMemberVO> list = new ArrayList<BabyMemberVO>();
 		getConnect();
 		String sql = "select id, pw from babymember where id=? and pw=?";	
 			try {
@@ -124,10 +124,10 @@ public class BabyMemberDAO {
 				rs = psmt.executeQuery();
 				
 				if (rs.next()) {
-					String id = rs.getString(1);
-					String pw = rs.getString(2);
-					BabyMemberVO vo = new BabyMemberVO(id, pw);
-					list.add(vo);
+					String id = rs.getString("id");
+					String pw = rs.getString("pw");
+					//BabyMemberVO vo = new BabyMemberVO(id, pw);
+					list.add(new BabyMemberVO(id, pw));
 					
 				}else {
 					System.out.println("어 list 잘못된듯 ㅇㅇ");
