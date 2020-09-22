@@ -16,6 +16,15 @@ public class BabyMemberVO {
 		this.age = age;
 		this.hp = hp;
 	}
+	
+	
+
+	public BabyMemberVO(String id, String pw) {
+		super();
+		this.id = id;
+		this.pw = pw;
+	}
+
 
 	public BabyMemberVO() {
 

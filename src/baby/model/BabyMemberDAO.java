@@ -108,10 +108,50 @@ public class BabyMemberDAO {
 		}
 		
 		return cnt;
+		
 	}
 
+	public ArrayList<BabyMemberVO> memberlogin(String id_o, String pw_o) {
+		int cnt = 0;
+		ArrayList<BabyMemberVO> list = null;
+		getConnect();
+		String sql = "select id, pw from babymember where id=? and pw=?";	
+			try {
+				
+				psmt = conn.prepareStatement(sql);
+				psmt.setString(1, id_o);
+				psmt.setString(2, pw_o);
+				rs = psmt.executeQuery();
+				
+				if (rs.next()) {
+					String id = rs.getString(1);
+					String pw = rs.getString(2);
+					BabyMemberVO vo = new BabyMemberVO(id, pw);
+					list.add(vo);
+					
+				}else {
+					System.out.println("어 list 잘못된듯 ㅇㅇ");
+				}
+				
+				
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}finally {
+				dbClose();
+			}
+		
+		return list;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	public Total_modelVO memberAllList() {
-		conn = getConnect();
+		getConnect();
 		Total_modelVO vo=null;
 		
 		String sql = "select * from total_model where num=1";
