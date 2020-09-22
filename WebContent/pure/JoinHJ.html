@@ -59,7 +59,7 @@ input {
 <body>
 
 
-	<form action="">
+	<form action="../BabyJoin" method="post">
 
 		<div>
 			<h1>회원가입</h1>
@@ -68,32 +68,32 @@ input {
 
 			<tr>
 				<td>
-					<input type="text" placeholder="아이디 입력" required="required" />
+					<input type="text" placeholder="아이디 입력" required="required" name="id" />
 				</td>
 			</tr>
 			<tr>
 				<td>
-				<input type="password" placeholder="패스워드 입력" required="required" />
+				<input type="password" placeholder="패스워드 입력" required="required" name="pw" />
 				</td>
 			</tr>
 			<tr>
 				<td>
-				<input type="text" placeholder="이름 입력" required="required" />
+				<input type="text" placeholder="이름 입력" required="required" name="name" />
 				</td>
 			</tr>
 			<tr>
 				<td>
-				<input type="number" placeholder="나이 입력" required="required" />
+				<input type="number" placeholder="나이 입력" required="required" name="age" />
 				</td>
 			</tr>
 			<tr>
 				<td>
-				<input type="text" placeholder="전화번호 입력" required="required" /><br />
+				<input type="text" placeholder="전화번호 입력" required="required" name="hp" /><br />
 				</td>
 			</tr>
 			<tr>
 				<td>
-				<input type="submit" value="가입하기" id="join" />
+				<input type="submit" value="가입하기" id="join" onClick="location.href='LoginHJ.html'"/>
 				</td>
 			</tr>
 

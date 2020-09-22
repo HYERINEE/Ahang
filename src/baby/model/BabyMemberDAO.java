@@ -191,6 +191,28 @@ public class BabyMemberDAO {
 		
 	}
 	
+	public int BabymemberJoin(BabyMemberVO vo) {
+		
+		conn = getConnect();
+		String sql = "insert into BabyMember values(?,?,?,?,?)";
+		int cnt = -1;
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1,vo.getId());
+			psmt.setString(2,vo.getPw());
+			psmt.setString(3,vo.getName());
+			psmt.setInt(4, vo.getAge());
+			psmt.setInt(5, vo.getHp());
+			cnt = psmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			dbClose();
+		}
+		return cnt;
+	}
+	
 	
 	
 	
