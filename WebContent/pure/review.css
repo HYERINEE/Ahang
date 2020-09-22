@@ -39,6 +39,7 @@
     background-size: 60px 60px;
     cursor: pointer;
     background-color: #f0f0f0;
+    
 }
 .rating .rate_radio:checked + label {
     background-color: #41ded8;
