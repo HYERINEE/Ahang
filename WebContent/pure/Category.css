@@ -2389,9 +2389,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
 	
-    margin-left: 60px;
-  
-
+	margin-left: 0px;
+	
 	color: #fff;
 	background-color: #8b62ff;
 	border-color: #8b62ff
@@ -5055,6 +5054,7 @@ blockquote small:before {
 
 .btn-primary, .btn-primary:hover {
 	background-image: linear-gradient(90deg, #A9D7CA, #3b1bff);
+	border-radius: 12px;
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF8B62FF",
 		endColorstr="#FF3B1BFF", GradientType=1)
