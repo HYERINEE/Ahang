@@ -208,11 +208,134 @@ public class BabyMemberDAO {
 	
 	
 	
-	public ArrayList<Total_modelVO> lotion_atopy() {
+	public ArrayList<Total_modelVO> CaLotion() {
 		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>(); 
 		conn = getConnect();
 		
-		String sql = "select * from total_model where category='lotion' and atopy is not null and sensitivity is not null";
+		String sql = "select * from total_model where category='lotion'";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			while (rs.next()) {
+				
+				int num = rs.getInt(1);
+				String category= rs.getString(2);
+				String brand_id = rs.getString(3);
+				String model_id = rs.getString(4);
+				int allergy = rs.getInt(5);
+				String allergy_ingre = rs.getString(6);
+				int atopy = rs.getInt(7);
+				int sensitivity = rs.getInt(8);
+				String ingredient = rs.getString(9);
+				double ingre_avg = rs.getDouble(10);
+				String filename = rs.getString(11);
+				String filecontent = rs.getString(12);
+				
+				//¹­±â
+				Total_modelVO vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
+				list.add(vo);
+				
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			dbClose();
+		}
+		return list;
+		
+	}
+	
+	public ArrayList<Total_modelVO> CaOil() {
+		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>(); 
+		conn = getConnect();
+		
+		String sql = "select * from total_model where category='oil'";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			while (rs.next()) {
+				
+				int num = rs.getInt(1);
+				String category= rs.getString(2);
+				String brand_id = rs.getString(3);
+				String model_id = rs.getString(4);
+				int allergy = rs.getInt(5);
+				String allergy_ingre = rs.getString(6);
+				int atopy = rs.getInt(7);
+				int sensitivity = rs.getInt(8);
+				String ingredient = rs.getString(9);
+				double ingre_avg = rs.getDouble(10);
+				String filename = rs.getString(11);
+				String filecontent = rs.getString(12);
+				
+				//¹­±â
+				Total_modelVO vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
+				list.add(vo);
+				
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			dbClose();
+		}
+		return list;
+		
+	}
+	
+	public ArrayList<Total_modelVO> CaWash() {
+		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>(); 
+		conn = getConnect();
+		
+		String sql = "select * from total_model where category='wash'";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			rs = psmt.executeQuery();
+			
+			while (rs.next()) {
+				
+				int num = rs.getInt(1);
+				String category= rs.getString(2);
+				String brand_id = rs.getString(3);
+				String model_id = rs.getString(4);
+				int allergy = rs.getInt(5);
+				String allergy_ingre = rs.getString(6);
+				int atopy = rs.getInt(7);
+				int sensitivity = rs.getInt(8);
+				String ingredient = rs.getString(9);
+				double ingre_avg = rs.getDouble(10);
+				String filename = rs.getString(11);
+				String filecontent = rs.getString(12);
+				
+				//¹­±â
+				Total_modelVO vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
+				list.add(vo);
+				
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			dbClose();
+		}
+		return list;
+		
+	}
+	
+	public ArrayList<Total_modelVO> CaCream() {
+		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>(); 
+		conn = getConnect();
+		
+		String sql = "select * from total_model where category='cream'";
 		
 		try {
 			psmt = conn.prepareStatement(sql);
