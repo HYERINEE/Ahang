@@ -14,17 +14,15 @@ public class Total_modelVO {
 	private double ingre_avg;
 	private String filename;
 	private String filecontent;
-	
-
-	
+	private int rank;
 	
 	
 	
 	
 	public Total_modelVO(int num, String category, String brand_id, String model_id, int allergy, String allergy_ingre,
-			int atopy, int sensitivity, String ingredient, double ingre_avg, String filename,
-			String filecontent) {
-		super();
+			int atopy, int sensitivity, String ingredient, double ingre_avg, String filename, String filecontent,
+			int rank) {
+	
 		this.num = num;
 		this.category = category;
 		this.brand_id = brand_id;
@@ -37,24 +35,9 @@ public class Total_modelVO {
 		this.ingre_avg = ingre_avg;
 		this.filename = filename;
 		this.filecontent = filecontent;
+		this.rank = rank;
 	}
 	
-	public String getFilename() {
-		return filename;
-	}
-
-	public void setFilename(String filename) {
-		this.filename = filename;
-	}
-
-	public String getFilecontent() {
-		return filecontent;
-	}
-
-	public void setFilecontent(String filecontent) {
-		this.filecontent = filecontent;
-	}
-
 	public int getNum() {
 		return num;
 	}
@@ -115,6 +98,27 @@ public class Total_modelVO {
 	public void setIngre_avg(double ingre_avg) {
 		this.ingre_avg = ingre_avg;
 	}
+	public String getFilename() {
+		return filename;
+	}
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+	public String getFilecontent() {
+		return filecontent;
+	}
+	public void setFilecontent(String filecontent) {
+		this.filecontent = filecontent;
+	}
+	public int getRank() {
+		return rank;
+	}
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+	
+	
+	
 
 	
 	

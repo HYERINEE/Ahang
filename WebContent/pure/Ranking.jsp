@@ -6,9 +6,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
-<c:set var="cpath" value="${pageContext.request.contextPath}" />
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +28,7 @@
 
 <title>Title page</title>
 
-<link href="./Product100.css" rel="stylesheet">
+<link href="./Category.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,6 +46,9 @@
 
 	String num = request.getParameter("num");
 	Total_modelVO vo = dao.CaAll(num);
+	String num2 = request.getParameter("num2");
+	ArrayList<Total_modelVO> list4 = dao.CaAllOrderby();
+	request.setAttribute("list4", list4);
 	%>
 
 
@@ -75,7 +75,7 @@
 							class="active"> Home </a></li>
 						<li><a href="./AhangAbout.html" title=""> 기업소개 </a></li>
 						<li><a href="./Category.jsp" title=""> 카테고리 </a></li>
-						<li><a href="./AhangRanking.html" title=""> 안전등급별 제품 </a></li>
+						<li><a href="./Ranking.jsp" title=""> 안전등급별 제품 </a></li>
 						<li><a href="./AhangType.html" title=""> 피부타입별 제품 </a></li>
 						<li>
 							<p>
@@ -93,102 +93,145 @@
 
 
 
-
 	<!-- 안내글 -->
 	<div class="section-container">
 		<div class="container"
-			style="margin-top: 19px; padding-top: 24px; padding-left: 15px;">
+			style="margin-top: 19px; background-color: rgb(240, 249, 247); padding-top: 24px; padding-left: 15px;">
 			<div class="row section-container-spacer">
 				<div class="col-xs-12" style="background-color: white;">
-					<div class="text-center">
-						<h1>안전합니다!</h1>
-					</div>
+					<div class="text-center"></div>
 					<div class="col-md-8 col-md-offset-2" style="padding-right: 5px">
-						<p>각 제품의 성분들을 하나도 빠짐없이 취합하여 분석합니다. 피부 타입별 민감도 분석 후 해로운 성분을
-							배제하고</p>
-						<p class="text-center">또한 유리한 성분을 조합하여 유사한 성분을 함유 되어 있는 제품 정보를
-							제공해드립니다.</p>
+						<p>아기안전본부는 EWG등급만으로는 부족하기에 국내외 10가지의 화학물질 유해성 데이터를 통해 성분의 유해성을
+							판단합니다. 공신력 있는 기관에서 제시한 자료와 실질적으로 제품의 유해성으로 연결될 수 있는 데이터만 보여드리기위해
+							노력합니다</p>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<!-- 화이트박스 -->
+	<div class="text-center">
+		<h2 style="color: white;">Vivamus laoreet</h2>
 
 
-			<!-- 사진란 -->
-			<div class="row">
+
+		<!-- 제품순위목록 -->
+
+		<div class="row">
+			<c:forEach var="vo2" items="${list4}">
 				<div class="col-md-4">
 					<div class="pricing-card pricing-primary"
-						style="padding-top: 70px; background-color: white; height: 450px; width: 250; box-shadow: rgb(232, 232, 232);">
-						<div class="oil_rank1" href="./AhangHome.html" title="">
-							<a href="product.html?num=1"> <img
-								src="<%=vo.getFilecontent()%><%=vo.getFilename()%>"
-								class="oil_rank1-img" alt=""
-								style="height: 300px; width: 250px;">
+						style="padding: 0px; background-color: white; height: 400px; width: 250;">
+						<div class="lotion_rank1" href="./AhangHome.html" title="">
+							<a href="ProductDetail.jsp?num=${vo2.num}"> <img
+								src="${vo2.filecontent}${vo2.filename}" class="lotion_rank1-img"
+								alt="" style="height: 300px; width: 250px;">
 							</a>
 						</div>
 						<span
 							style="margin: 0px 0px 5px; font-family: sans-serif; font-size: 17px; color: rgb(143, 143, 143);">
-							<%=vo.getBrand_id()%></span><br> <span style="font-size: 20px;"><%=vo.getModel_id()%></span>
+							${vo2.brand_id}</span><br> <span style="font-size: 17px;">${vo2.model_id}</span>
 						</h6>
 						<div class="rank1_bar bar1"
-							style="margin: 0px auto; width: 280px; height: 5px; border-top: 0.5px solid rgb(141, 158, 186);"></div>
-						<div class="rank_score" style="font-size: 20px; align: center;">
-							아기안전본부내 안전성분 순위<br> <%=vo.getRank()%>위
+							style="margin: 0px auto; width: 234.6px; height: 3px; border-top: 0.5px solid rgb(141, 158, 186);"></div>
+						<div class="star">
+							<img src="./assets/images/star.svg"> <img
+								src="./assets/images/star.svg"> <img
+								src="./assets/images/star.svg"> <img
+								src="./assets/images/star.svg"> <img
+								src="./assets/images/star.svg">
 						</div>
+					</div>
+					<div class="rank_feature1" align="center">
+						<ul class="features" style="margin-bottom: 20px;">
+						</ul>
+						<a href="AhangProduct.html" class="btn btn-primary" title=""
+							style="margin-left: 0px;">둘러보기</a>
+					</div>
+
+				</div>
+			</c:forEach>
+		</div>
+
+
+
+		<!-- 1번째 
+
+		<div class="row">
+			<div class="rank_feature1" align="center">
+				<ul class="features" style="margin-bottom: 20px;">
+				</ul>
+				<a href="AhangProduct.html" class="btn btn-primary" title=""
+					style="margin-left: 0px;">Lotion</a>
+			</div>
+			<div class="col-md-4">
+				<div class="pricing-card pricing-primary"
+					style="padding: 0px; background-color: white; height: 400px; width: 250;">
+					<div class="lotion_rank1" href="./AhangHome.html" title="">
+						<a href="AhangProduct.html"> <img
+							src="./assets/prod/img_lotion/lotion_10.jpg"
+							class="lotion_rank1-img" alt=""
+							style="height: 300px; width: 250px;">
+						</a>
+					</div>
+					<span
+						style="margin: 0px 0px 5px; font-family: sans-serif; font-size: 17px; color: rgb(143, 143, 143);">
+						LION</span><br> <span style="font-size: 17px;">아이!깨끗해</span>
+					</h6>
+					<div class="rank1_bar bar1"
+						style="margin: 0px auto; width: 234.6px; height: 3px; border-top: 0.5px solid rgb(141, 158, 186);"></div>
+					<div class="star">
+						<img src="./assets/images/star.svg"> <img
+							src="./assets/images/star.svg"> <img
+							src="./assets/images/star.svg"> <img
+							src="./assets/images/star.svg"> <img
+							src="./assets/images/star.svg">
 					</div>
 				</div>
 
 
-				<textarea
-					style="width: 454px; height: 209px; margin-right: 70px; margin-left: 50px; padding-top: 30px; padding-left: 10px; border-left-width: 1px; border-right-width: 1px;"
-					rows="5" class="review_textarea">
-					<%=vo.getIngredient()%>
-					</textarea>
+			</div>-->
+
+			<br> <br> <br> <br>
+
+			<p class="controlls">
+				<input type="button" value="이전으로 " class="prev"> <input
+					type="button" value="다음으로 " class="next">
+			</p>
+			<div class="row">
 
 
-				<!-- 리뷰작성란 -->
-				<div class="wrap"
-					style="width: 500px; height: 540px; margin-right: 0px; margin-left: 400px; padding-top: 30px;">
-					<div style="margin-bottom: 5px; font-size: 35px; margin-top: 30px;">후기</div>
-					<form name="reviewform" class="reviewform" method="post"
-						action="/save">
-						<input type="hidden" name="rate" id="rate" value="0" />
-						<p class="title_star">별점과 리뷰를 남겨주세요.</p>
-						<div class="review_rating">
-							<div class="warning_msg">별점을 선택해 주세요.</div>
-							<div class="rating">
-								<!-- 해당 별점을 클릭하면 해당 별과 그 왼쪽의 모든 별의 체크박스에 checked 적용 -->
-								<input type="checkbox" name="rating" id="rating1" value="1"
-									class="rate_radio" title="1점"> <label for="rating1"></label>
-								<input type="checkbox" name="rating" id="rating2" value="2"
-									class="rate_radio" title="2점"> <label for="rating2"></label>
-								<input type="checkbox" name="rating" id="rating3" value="3"
-									class="rate_radio" title="3점"> <label for="rating3"></label>
-								<input type="checkbox" name="rating" id="rating4" value="4"
-									class="rate_radio" title="4점"> <label for="rating4"></label>
-								<input type="checkbox" name="rating" id="rating5" value="5"
-									class="rate_radio" title="5점"> <label for="rating5"></label>
-							</div>
+				<div class="row section-container-spacer">
+					<div class="col-xs-12">
+						<div class="text-center" style="margin-top: 100px;" align="center";>
+							<h1>원하시는 상품이 없나요?</h1>
 						</div>
-						<div class="review_contents">
-							<div class="warning_msg">5자 이상으로 작성해 주세요.</div>
-							<textarea rows="5" class="review_textarea"></textarea>
+						<div class="col-md-8 col-md-offset-2"
+							style="padding-right: 5px; margin-bottom: 100px;">
+							<h4 align="center">
+								귀하의 제품을 알려주세요 , 데이터 취합 후 빠른 시일에 제품이 추가가 됩니다!<br> <br>
+								피부 타입별 민감도 분석 후 제품별 안정등급의 순위를 정해<br> <br> 피부에 안전한 성분이
+								함유되어 있는 제품의 정보를 제공해드립니다.
+							</h4>
 						</div>
-						<div class="cmd">
-							<!-- 작성일자 기능구현 -->
-							<p></p>
-							<input type="button" name="save" id="save" value="등록">
-						</div>
-					</form>
+					</div>
 				</div>
-
-
 			</div>
-
 		</div>
 
+
+
+
+
+
+
+
+
+
+
+
 	</div>
-
-
 
 
 	<footer>
@@ -265,7 +308,7 @@
 </script>
 
 -->
-	<script type="text/javascript" src="../js/star.js"></script>
+	<script type="text/javascript" src="./main.41beeca9.js"></script>
 </body>
 
 </html>
