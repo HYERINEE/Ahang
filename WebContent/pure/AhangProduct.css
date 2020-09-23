@@ -89,12 +89,6 @@ sub {
 	bottom: -.25em
 }
 
-.lotion_rank1-img{
-	position : absolute;
-	width: 200px;
-    height: 200px;	
-}
-
 img {
 	border: 0
 }
@@ -2276,9 +2270,7 @@ input[type=search] {
 		padding-top: 9px
 	}
 }
-.lotion_rank1{
-	
-}
+
 .form-horizontal .has-feedback .form-control-feedback {
 	right: 15px
 }
@@ -2397,9 +2389,13 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
 	
+<<<<<<< HEAD
     margin-left: 0px;
   
 
+=======
+	margin-left: 0px;
+	
 	color: #fff;
 	background-color: #8b62ff;
 	border-color: #8b62ff
@@ -4942,7 +4938,7 @@ blockquote small:before {
 }
 
 .pricing-card.pricing-primary {
-	background-color: white;
+	background-color: #4e74ff
 }
 
 .pricing-card.pricing-info {
@@ -5165,9 +5161,7 @@ height: 800px;
 width: 800px;
 border-color: red;	
 }
-#slide{
-	width: 2200px;
-}
+
 .controlls{
 	text-align: center;
 	margin-top: 20px;
