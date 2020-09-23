@@ -17,7 +17,7 @@
 
 	<%
 	BabyMemberDAO dao = new BabyMemberDAO();
-	ArrayList<Total_modelVO> list = dao.lotion_atopy();		
+	ArrayList<Total_modelVO> list = dao.CaLotion();		
 	request.setAttribute("list", list);
 	
 	%>

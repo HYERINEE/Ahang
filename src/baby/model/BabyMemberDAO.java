@@ -209,7 +209,7 @@ public class BabyMemberDAO {
 	
 	
 	public ArrayList<Total_modelVO> CaLotion() {
-		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>(); 
+		ArrayList<Total_modelVO> list1 = new ArrayList<Total_modelVO>(); 
 		conn = getConnect();
 		
 		String sql = "select * from total_model where category='lotion'";
@@ -235,7 +235,7 @@ public class BabyMemberDAO {
 				
 				//¹­±â
 				Total_modelVO vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
-				list.add(vo);
+				list1.add(vo);
 				
 			}
 			
@@ -245,12 +245,12 @@ public class BabyMemberDAO {
 		finally {
 			dbClose();
 		}
-		return list;
+		return list1;
 		
 	}
 	
 	public ArrayList<Total_modelVO> CaOil() {
-		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>(); 
+		ArrayList<Total_modelVO> list2 = new ArrayList<Total_modelVO>(); 
 		conn = getConnect();
 		
 		String sql = "select * from total_model where category='oil'";
@@ -276,7 +276,7 @@ public class BabyMemberDAO {
 				
 				//¹­±â
 				Total_modelVO vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
-				list.add(vo);
+				list2.add(vo);
 				
 			}
 			
@@ -286,12 +286,12 @@ public class BabyMemberDAO {
 		finally {
 			dbClose();
 		}
-		return list;
+		return list2;
 		
 	}
 	
 	public ArrayList<Total_modelVO> CaWash() {
-		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>(); 
+		ArrayList<Total_modelVO> list3 = new ArrayList<Total_modelVO>(); 
 		conn = getConnect();
 		
 		String sql = "select * from total_model where category='wash'";
@@ -317,7 +317,7 @@ public class BabyMemberDAO {
 				
 				//¹­±â
 				Total_modelVO vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
-				list.add(vo);
+				list3.add(vo);
 				
 			}
 			
@@ -327,7 +327,7 @@ public class BabyMemberDAO {
 		finally {
 			dbClose();
 		}
-		return list;
+		return list3;
 		
 	}
 	
@@ -369,6 +369,48 @@ public class BabyMemberDAO {
 			dbClose();
 		}
 		return list;
+		
+	}
+	
+	public Total_modelVO CaAll(String num1) {
+		Total_modelVO vo = null;
+		conn = getConnect();
+		
+		String sql = "select * from total_model where num =? ";
+		
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, num1);
+			rs = psmt.executeQuery();
+			
+			if (rs.next()) {
+				
+				int num = rs.getInt(1);
+				String category= rs.getString(2);
+				String brand_id = rs.getString(3);
+				String model_id = rs.getString(4);
+				int allergy = rs.getInt(5);
+				String allergy_ingre = rs.getString(6);
+				int atopy = rs.getInt(7);
+				int sensitivity = rs.getInt(8);
+				String ingredient = rs.getString(9);
+				double ingre_avg = rs.getDouble(10);
+				String filename = rs.getString(11);
+				String filecontent = rs.getString(12);
+				
+				//¹­±â
+				vo = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity, ingredient, ingre_avg, filename, filecontent);
+				
+				
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			dbClose();
+		}
+		return vo;
 		
 	}
 	

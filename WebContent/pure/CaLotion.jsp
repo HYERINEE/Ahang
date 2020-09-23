@@ -80,7 +80,7 @@
 						<li align="center"><a href="./AhangHome.html" title=""
 							class="active"> Home </a></li>
 						<li><a href="./AhangAbout.html" title=""> 기업소개 </a></li>
-						<li><a href="./AhangCategory.html" title=""> 카테고리 </a></li>
+						<li><a href="./Category.jsp" title=""> 카테고리 </a></li>
 						<li><a href="./AhangRanking.html" title=""> 안전등급별 제품 </a></li>
 						<li><a href="./AhangType.html" title=""> 피부타입별 제품 </a></li>
 						<li>
@@ -96,6 +96,7 @@
 			</div>
 		</nav>
 	</header>
+
 
 
 
@@ -189,8 +190,8 @@
 					<div class="pricing-card pricing-primary"
 						style="padding: 0px; background-color: white; height: 400px; width: 250;">
 						<div class="lotion_rank1" href="./AhangHome.html" title="">
-							<a href="AhangProduct.html"> <img
-								src="${vo.filecontent}${vo.filename}" class="lotion_rank1-img"
+							<a href="ProductDetail.jsp?num=${vo.num}"> 
+							<img src="${vo.filecontent}${vo.filename}" class="lotion_rank1-img"
 								alt="" style="height: 300px; width: 250px;">
 							</a>
 						</div>
