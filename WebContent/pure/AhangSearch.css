@@ -11,7 +11,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-	font-family: sans-serif;
+	font-family: BBTreeGR;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
@@ -843,7 +843,7 @@ pre code {
 }
 
 .col-xs-4 {
-	width: 30%
+	width: 33.33333%
 }
 
 .col-xs-5 {
@@ -876,6 +876,7 @@ pre code {
 
 .col-xs-12 {
 	width: 100%
+	
 }
 
 .col-xs-pull-0 {
@@ -1209,7 +1210,7 @@ pre code {
 		width: 25%
 	}
 	.col-md-4 {
-		width: 25%
+		width: 33.33333%;
 	}
 	.col-md-5 {
 		width: 41.66667%
@@ -2388,18 +2389,9 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-primary {
-	
-<<<<<<< HEAD
-    margin-left: 0px;
-  
-
-=======
-	margin-left: 0px;
-	
 	color: #fff;
 	background-color: #8b62ff;
 	border-color: #8b62ff
-	
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -4966,7 +4958,6 @@ blockquote small:before {
 .features {
 	padding-left: 40px;
 	list-style: none
-
 }
 
 .features li {
@@ -5153,20 +5144,6 @@ textarea {
 	max-width: 100%
 }
 
-
-#slide_menu{
-position: absolute;
-
-height: 800px;
-width: 800px;
-border-color: red;	
-}
-
-.controlls{
-	text-align: center;
-	margin-top: 20px;
-}
-
 @font-face {
 	font-family: 'BBTreeGR';
 	src:
@@ -5177,9 +5154,14 @@ border-color: red;
 }
 
 .navbar-right {
-	float: right !important;
+	float: right !important
 	margin-right: -15px;
 }
 
+@font-face { font-family: 'ImcreSoojin'; 
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff'); 
+font-weight: normal; font-style: normal; }
+
+ 
 
 /*# sourceMappingURL=main.41beeca9.map*/
