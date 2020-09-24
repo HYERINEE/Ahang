@@ -5162,6 +5162,53 @@ textarea {
 src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff'); 
 font-weight: normal; font-style: normal; }
 
+.box {
+  margin: 50px auto;
+  width: 500px;
+}
+
+
+/* radio */
+
+.ctm-radio {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1
+}
+
+.ctm-radio input {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+  filter: alpha(opacity=0)
+}
+
+.ctm-radio label {
+  display: inline-block;
+  height: 20px;
+  padding-right: 10px;
+  font-size: 12px;
+  line-height: 1.6em;
+  line-height: 19px\9
+}
+
+.ctm-radio label i {
+  display: inline-block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin: 2px 5px 0 0;
+  background: url('http://cfile28.uf.tistory.com/image/22472D42562748E630F974') no-repeat 0 0;
+}
+
+.ctm-radio.checked label i {
+  background-position: 0 -14px
+}
+
  
 
 /*# sourceMappingURL=main.41beeca9.map*/
