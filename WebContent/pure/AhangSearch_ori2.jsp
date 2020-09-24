@@ -7,47 +7,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" 
-integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		
-		$(".btn").click(function(){
-			
-			//alert(addr);
-			//var category = $("#category").val();
-			//var allergy_ingre = $(".allergy_ingre").val();
-			//var allergy = $(".allergy").val();
-			//var atopy = $(".atopy").val();
-			//var sensitivity = $(".sensitivity").val();
-			
-			//alert(allergy_ingre);
-			$.ajax({
-				url : "http://127.0.0.1:5000/",
-				type : "POST",
-				data : {category:$("#category").val(),allergy_ingre:$(".allergy_ingre").val(),
-					allergy:$(".allergy").val(),atopy:$(".atopy").val(),sensitivity:$(".sensitivity").val()},
-				dataType : "text",
-				success : function(){alert("성공");}
-					//$.ajax({
-						//url : "./baby.mem.pojo/runn",
-						//type : "post",
-						//data : {category:$("#category").val()},
-						//success : function(){alert("성공")},
-						//error : function(){alert("error");}
-					//});
-					,
-				error : function(){alert("error");}
-			});
-			
-		}); //click
-		
-	}); //ready
-	
-	
-	
-</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,15 +82,15 @@ th, td {
 
 
 
-	<!-- <form action='http://127.0.0.1:5000/' method='POST' name="fofo"> -->
+	<!-- Add your content of header -->
 
-	<form action='#' name="fofo">
+	<form action='http://127.0.0.1:5000/' method='POST' name="fofo">
 		<div style="margin-left: 100px; margin-top: 100px;">
 			<div>
 				<table style="margin-left: 20px; margin-right: 20px;" width="400px;"
 					height="200px" cellspacing="10">
 					<tr>
-						<select name="category" id="category">
+						<select name="category">
 							<option value="1" style="font-color: black;">카테고리</option>
 							<option value="1">로션</option>
 							<option value="2">오일</option>
@@ -142,24 +101,24 @@ th, td {
 					</tr>
 					<!-- 알러지 성분 -->
 					<tr>
-						<td><input type="hidden" name="allergy_ingre" value="0" class="allergy_ingre">
-							알러지 성분 있음<input type="radio" name="allergy" value="1" class="allergy"></td>
+						<td><input type="hidden" name="allergy_ingre" value="0">
+							알러지 성분 있음<input type="radio" name="allergy" value="1"></td>
 						<td></td>
-						<td>알러지 성분 없음<input type="radio" name="allergy" value="0" class="allergy">
+						<td>알러지 성분 없음<input type="radio" name="allergy" value="0">
 						</td>
 					</tr>
 					<tr>
-						<td>아토피 좋은 성분<input type="radio" name="atopy" value="1" class="atopy"></td>
+						<td>아토피 좋은 성분<input type="radio" name="atopy" value="1"></td>
 						<td></td>
-						<td>아토피 안좋은 성분 <input type="radio" name="atopy" value="0" class="atopy">
+						<td>아토피 안좋은 성분 <input type="radio" name="atopy" value="0">
 						</td>
 					</tr>
 					<tr>
 						<td>민감한 피부에 좋음<input type="radio" name="sensitivity"
-							value="1" class="sensitivity"></td>
+							value="1"></td>
 						<td></td>
 						<td>민감한 피부에 안좋음<input type="radio" name="sensitivity"
-							value="0" class="sensitivity">
+							value="0">
 						</td>
 					</tr>
 					<tr>
@@ -174,8 +133,6 @@ th, td {
 			</div>
 	</form>
 
-
-	
 
 
 	<%
