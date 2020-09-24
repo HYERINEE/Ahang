@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,10 +50,10 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li align="center"><a href="./AhangHome.html" title=""
 							class="active"> Home </a></li>
-						<li><a href="./AhangAbout.html" title=""> ê¸°ì—…ì†Œê°œ </a></li>
-						<li><a href="./AhangCategory.html" title=""> ì¹´í…Œê³ ë¦¬ </a></li>
-						<li><a href="./AhangRanking.html" title=""> ì•ˆì „ë“±ê¸‰ë³„ ì œí’ˆ </a></li>
-						<li><a href="./AhangType.html" title=""> í”¼ë¶€íƒ€ìž…ë³„ ì œí’ˆ </a></li>
+						<li><a href="./AhangAbout.html" title=""> ±â¾÷¼Ò°³ </a></li>
+						<li><a href="./AhangCategory.html" title=""> Ä«Å×°í¸® </a></li>
+						<li><a href="./AhangRanking.html" title=""> ¾ÈÀüµî±Þº° Á¦Ç° </a></li>
+						<li><a href="./AhangType.html" title=""> ÇÇºÎÅ¸ÀÔº° Á¦Ç° </a></li>
 						<li>
 							<p>
 								<a href="#"
@@ -68,34 +71,40 @@
 
 		<!-- Add your content of header -->
 
-		<form action="http://localhost:5000/">
+		<form action="http://127.0.0.1:5000/" method= 'POST'>
 			<div style="margin-left: 100px; margin-top: 100px;">
 				<div>
 					<select name="category">
-						<option value="1" style="font-color: black;">ì¹´í…Œê³ ë¦¬</option>
-						<option value="1">ë¡œì…˜</option>
-						<option value="2">ì˜¤ì¼</option>
-						<option value="3">í¬ë¦¼</option>
-						<option value="4">ì›Œì‹œ</option>
+						<option value="1" style="font-color: black;">Ä«Å×°í¸®</option>
+						<option value="1">·Î¼Ç</option>
+						<option value="2">¿ÀÀÏ</option>
+						<option value="3">Å©¸²</option>
+						<option value="4">¿ö½Ã</option>
 					</select> 
+					<br>
+						<!-- ¾Ë·¯Áö ¼ººÐ -->
+						<input type="hidden" name="allergy_ingre" value="0">
+						<br/>
+						¾Ë·¯Áö ÀÖÀ½<input type="radio" name="allergy" value="1">
+						¾Ë·¯Áö ¾øÀ½<input type="radio" name="allergy" value="0">
+						<br/>
 					
-							<input type='checkbox' name='allegy' value='1' />ì•ŒëŸ¬ì§€
-							<input type="text" name="allergy_ingre" value='0'/>ì•ŒëŸ¬ì§€ì„±ë¶„ <br/>
+						
+						¾ÆÅäÇÇ¿¡ ÁÁÀ½<input type="radio" name="atopy" value="1">
+						¾ÆÅäÇÇ¿¡ ÁÁÀº ¼ººÐ¾øÀ½<input type="radio" name="atopy" value="0">
+						<br/>
+						
+						¹Î°¨ÇÑ ÇÇºÎ¿¡ ÁÁÀ½<input type="radio" name="sensitivity" value="1">
+						¹Î°¨ÇÑ ÇÇºÎX<input type="radio" name="sensitivity" value="0">
+						
+						<br/>
 							
-							<input type='checkbox' name='atopy' value='1' />ì•„í† í”¼
-							<input type='checkbox' name='sensitivity' value='1' />ë¯¼ê°ì„± <br>
-							
-					<input type="submit" value="ê²€ìƒ‰">
+					<input type="submit" value="°Ë»ö">
 				</div>
 			</div>
 
 		</form>
-
-		<p id="s">
-		
-		</p>
-
-
+	
 	<script>
 		document.addEventListener("DOMContentLoaded", function(event) {
 			navActivePage();
