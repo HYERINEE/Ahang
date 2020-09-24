@@ -457,6 +457,48 @@ public class BabyMemberDAO {
 
 	}
 	
+	public Total_modelVO CaRank(String num2) {
+		Total_modelVO vo2 = null;
+		conn = getConnect();
+
+		String sql = "select * from total_model where num =? ";
+
+		try {
+			psmt = conn.prepareStatement(sql);
+			psmt.setString(1, num2);
+			rs = psmt.executeQuery();
+
+			if (rs.next()) {
+
+				int num = rs.getInt(1);
+				String category = rs.getString(2);
+				String brand_id = rs.getString(3);
+				String model_id = rs.getString(4);
+				int allergy = rs.getInt(5);
+				String allergy_ingre = rs.getString(6);
+				int atopy = rs.getInt(7);
+				int sensitivity = rs.getInt(8);
+				String ingredient = rs.getString(9);
+				double ingre_avg = rs.getDouble(10);
+				String filename = rs.getString(11);
+				String filecontent = rs.getString(12);
+				int rank = rs.getInt(13);
+
+				// ¹­±â
+				vo2 = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity,
+						ingredient, ingre_avg, filename, filecontent, rank);
+
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			dbClose();
+		}
+		return vo2;
+
+	}
+	
 	
 
 

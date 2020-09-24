@@ -46,9 +46,13 @@
 	request.setAttribute("list2", list2);
 	ArrayList<Total_modelVO> list3 = dao.CaWash();
 	request.setAttribute("list3", list3);
+	ArrayList<Total_modelVO> list4 = dao.CaAllOrderby();
+	request.setAttribute("list4", list4);
 
 	String num = request.getParameter("num");
 	Total_modelVO vo = dao.CaAll(num);
+	String num2 = request.getParameter("num2");
+	Total_modelVO vo2 = dao.CaRank(num2);
 	%>
 
 
@@ -75,7 +79,7 @@
 							class="active"> Home </a></li>
 						<li><a href="./AhangAbout.html" title=""> 기업소개 </a></li>
 						<li><a href="./Category.jsp" title=""> 카테고리 </a></li>
-						<li><a href="./AhangRanking.html" title=""> 안전등급별 제품 </a></li>
+						<li><a href="./Ranking.jsp" title=""> 안전등급별 제품 </a></li>
 						<li><a href="./AhangType.html" title=""> 피부타입별 제품 </a></li>
 						<li>
 							<p>
