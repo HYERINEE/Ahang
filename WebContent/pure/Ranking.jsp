@@ -248,13 +248,13 @@
 					style="margin-top: 19px; background-color: rgb(240, 249, 247); padding-top: 24px; padding-left: 15px;">
 					<div class="row section-container-spacer"></div>
 
-					<!-- 크림 -->
+					<!-- 워시 -->
 
 					<div class="row">
 						<div class="col-md-4" style="width: 23%;">
 							<a href="CaLotion.jsp" style="list-style: none;">
-								<div class="pricing-card pricing-info">
-									<h3>크림</h3>
+								<div class="pricing-card pricing-secondary">
+									<h3>워시</h3>
 									<h6 class="price">
 										<span>TOP</span>3
 
@@ -270,7 +270,7 @@
 					<!-- 3번째 -->
 
 					<div class="row">
-						<c:forEach var="vo" items="${list}" begin="0" end="2" step="1">
+						<c:forEach var="vo" items="${list3}" begin="0" end="2" step="1">
 							<div class="col-md-4">
 								<div class="pricing-card pricing-primary"
 									style="padding: 0px; background-color: white; height: 400px; width: 250;">
@@ -313,13 +313,13 @@
 						style="margin-top: 19px; background-color: rgb(240, 249, 247); padding-top: 24px; padding-left: 15px;">
 						<div class="row section-container-spacer"></div>
 
-						<!-- 워시 -->
+						<!-- 크림 -->
 
 						<div class="row">
 							<div class="col-md-4" style="width: 23%;">
 								<a href="CaLotion.jsp" style="list-style: none;">
 									<div class="pricing-card pricing-info">
-										<h3>워시</h3>
+										<h3>크림</h3>
 										<h6 class="price">
 											<span>TOP</span>3
 
@@ -335,7 +335,7 @@
 						<!-- 3번째 -->
 
 						<div class="row">
-							<c:forEach var="vo" items="${list3}" begin="0" end="2" step="1">
+							<c:forEach var="vo" items="${list}" begin="0" end="2" step="1">
 								<div class="col-md-4">
 									<div class="pricing-card pricing-primary"
 										style="padding: 0px; background-color: white; height: 400px; width: 250;">
@@ -372,6 +372,8 @@
 							</c:forEach>
 
 						</div>
+
+
 
 
 
