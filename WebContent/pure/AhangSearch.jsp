@@ -7,55 +7,66 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" 
-integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="jquery.ajax-cross-origin.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	crossorigin="anonymous"></script>
 <script type="text/javascript">
-	$(document).ready(function(){
-		
-		$(".btn").click(function(){
-			
+	$(document).ready(function() {
+
+		$(".btn").click(function() {
+
 			//alert(addr);
 			//var category = $("#category").val();
 			//var allergy_ingre = $(".allergy_ingre").val();
 			//var allergy = $(".allergy").val();
 			//var atopy = $(".atopy").val();
 			//var sensitivity = $(".sensitivity").val();
-			
+
 			//alert(allergy_ingre);
 			$.ajax({
 				//url : "http://210.105.224.109:5000",
 				url : "/AhangProject/FlaskServer",
-				type : "POST",					
-				data : {category:$("#category").val(),allergy_ingre:$(".allergy_ingre").val(),
-					allergy:$(".allergy").val(),atopy:$(".atopy").val(),sensitivity:$(".sensitivity").val()},
-				dataType : "html",
-				success : function(data){
-					alert(data);
+				type : "POST",
+				data : {
+					category : $("#category").val(),
+					allergy_ingre : $(".allergy_ingre").val(),
+					allergy : $(".allergy").val(),
+					atopy : $(".atopy").val(),
+					sensitivity : $(".sensitivity").val()
+				},
+				dataType : "json",
+				success : resultHtml,
+				error : function() {
+					alert("error");
 				}
-					//$.ajax({
-						//url : "./baby.mem.pojo/runn",
-						//type : "post",
-						//data : {category:$("#category").val()},
-						//success : function(){alert("성공")},
-						//error : function(){alert("error");}
-					//});
-					,
-				error : function(){alert("error");}
 			});
 			
-		}); //click
-		
-	}); //ready
-	
-	
-	function ifs(){}
-	
-	
-	
-	
-	
-	
+
+		});
+
+	}); //click
+
+	function resultHtml(data) {
+		//alert(data);
+		var view="";
+		view+="<table border='1'>";
+		view+="<tr>";
+		view+="<td>번호</td>";
+		view+="<td>브렌드</td>";
+		view+="<td>제품명</td>";
+		view+="<td>성분</td>";
+		view+="</tr>";
+		$.each(data, function(index, obj){
+			view+="<tr>";
+			view+="<td>"+obj.num+"</td>";
+			view+="<td>"+obj.brand_id+"</td>";
+			view+="<td>"+obj.model_id+"</td>";
+			view+="<td>"+obj.ingredient+"</td>";
+			view+="</tr>";			
+		});		
+		view+="</table>";
+		$("#list").html(view);
+	}
 </script>
 <!DOCTYPE html>
 <html lang="en">
@@ -141,9 +152,9 @@ th, td {
 					height="200px" cellspacing="10">
 					<tr>
 						<select name="category" id="category">
-							<option value="1" style="font-color: black;">카테고리</option>
-							<option value="1">로션</option>
-							<option value="2">오일</option>
+							<option value="0" style="font-color: black;">카테고리</option>
+							<option value="0">로션</option>
+							<option value="1">오일</option>
 							<option value="3">크림</option>
 							<option value="4">워시</option>
 						</select>
@@ -151,16 +162,20 @@ th, td {
 					</tr>
 					<!-- 알러지 성분 -->
 					<tr>
-						<td><input type="hidden" name="allergy_ingre" value="0" class="allergy_ingre">
-							알러지 성분 있음<input type="radio" name="allergy" value="1" class="allergy"></td>
+						<td><input type="hidden" name="allergy_ingre" value="0"
+							class="allergy_ingre"> 알러지 성분 있음<input type="radio"
+							name="allergy" value="1" class="allergy"></td>
 						<td></td>
-						<td>알러지 성분 없음<input type="radio" name="allergy" value="0" class="allergy">
+						<td>알러지 성분 없음<input type="radio" name="allergy" value="0"
+							class="allergy">
 						</td>
 					</tr>
 					<tr>
-						<td>아토피 좋은 성분<input type="radio" name="atopy" value="1" class="atopy"></td>
+						<td>아토피 좋은 성분<input type="radio" name="atopy" value="1"
+							class="atopy"></td>
 						<td></td>
-						<td>아토피 안좋은 성분 <input type="radio" name="atopy" value="0" class="atopy">
+						<td>아토피 안좋은 성분 <input type="radio" name="atopy" value="0"
+							class="atopy">
 						</td>
 					</tr>
 					<tr>
@@ -174,8 +189,7 @@ th, td {
 					<tr>
 					</tr>
 					<tr>
-						<td align="right">
-						<input type="submit" value="검        색"
+						<td align="right"><input type="button" value="검        색"
 							class="btn btn-primary"></td>
 					</tr>
 					</div>
@@ -184,20 +198,9 @@ th, td {
 	</form>
 
 
+	<div id="list">
 	
-
-
-	<%
-		String pre = request.getParameter("s");
-
-	
-	%>
-	<h1>
-		당신이 원하는 제품은   <%=pre%>
-	</h1>
-
-
-
+	</div>
 
 
 	<p class="controlls"></p>

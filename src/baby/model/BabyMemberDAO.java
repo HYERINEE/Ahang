@@ -499,29 +499,38 @@ public class BabyMemberDAO {
 
 	}
 	
-	
-/*
-	public ArrayList<Total_modelVO> osusume(String category) {
-		ArrayList<Total_modelVO> list = new ArrayList<Total_modelVO>();
+
+	public ArrayList<Total_modelVO> osusume(String category_num, String line) {
+		ArrayList<Total_modelVO> list13 = new ArrayList<Total_modelVO>();
 		
 		Total_modelVO vo2 = null;
 		conn = getConnect();
-
-		String sql = "select * from total_model where category=? and ingre_avg";
-
 		
-		//select model_id,ingre_avg from total_model where category='lotion' and
-				//ingre_avg<1.4 and rownum<4 order by ingre_avg;
+		if (category_num.equals("0")) {
+			category_num = "lotion";
+		}else if(category_num.equals("1")) {
+			category_num = "oil";
+		}else if(category_num.equals("4")) {
+			category_num = "wash";
+		}else if(category_num.equals("3")) {
+			category_num = "cream";
+		}
+		double result = Double.parseDouble(line);		
 		
+		System.out.println(category_num+":"+result);
+		
+		String sql = "select * from total_model where category=? and ingre_avg< ? and rownum<4 order by ingre_avg";
 		
 		try {
 			psmt = conn.prepareStatement(sql);
-			psmt.setString(1, num2);
+			psmt.setString(1, category_num);
+			psmt.setDouble(2, result);
+			
 			rs = psmt.executeQuery();
 
-			if (rs.next()) {
+			while (rs.next()) {
 
-				int num = rs.getInt(1);
+				int num = rs.getInt("num");
 				String category = rs.getString(2);
 				String brand_id = rs.getString(3);
 				String model_id = rs.getString(4);
@@ -539,18 +548,20 @@ public class BabyMemberDAO {
 				vo2 = new Total_modelVO(num, category, brand_id, model_id, allergy, allergy_ingre, atopy, sensitivity,
 						ingredient, ingre_avg, filename, filecontent, rank);
 
+				list13.add(vo2);	
+		
 			}
-
+            
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
 			dbClose();
-		}
-		return vo2;
+		}// 嬴 螃酈 六六六六梭礎啾概啻 葬蝶お 13梱雖 鉻擎還六六六六13 譆擁璋濠~六六六六六六六六
+		return list13;
 
 	}
 	
-	*/
+
 	
 	
 
