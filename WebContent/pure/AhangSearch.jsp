@@ -40,7 +40,6 @@
 					alert("error");
 				}
 			});
-			
 
 		});
 
@@ -48,23 +47,21 @@
 
 	function resultHtml(data) {
 		//alert(data);
-		var view="";
-		view+="<table border='1'>";
-		view+="<tr>";
-		view+="<td>번호</td>";
-		view+="<td>브렌드</td>";
-		view+="<td>제품명</td>";
-		view+="<td>성분</td>";
-		view+="</tr>";
-		$.each(data, function(index, obj){
-			view+="<tr>";
-			view+="<td>"+obj.num+"</td>";
-			view+="<td>"+obj.brand_id+"</td>";
-			view+="<td>"+obj.model_id+"</td>";
-			view+="<td>"+obj.ingredient+"</td>";
-			view+="</tr>";			
-		});		
-		view+="</table>";
+		var view = "";
+		view += "<table padding='30px';align='center'; style='margin-left: 200px;>'";
+		view += "<tr>";
+		view += "<td></td>";
+		view += "<td>브랜드</td>";
+		view += "<td>제품명</td>";
+		view += "</tr>";
+		$.each(data,function(index, obj) {
+							view += "<tr>";
+							view += "<td><img src='"+obj.filecontent+""+obj.filename+"' style='width:180px;height:200px'></td>";
+							view += "<td>" + obj.brand_id + "</td>";
+							view += "<td>" + obj.model_id + "</td>";
+							view += "</tr>";
+						});
+		view += "</table>";
 		$("#list").html(view);
 	}
 </script>
@@ -143,64 +140,80 @@ th, td {
 
 
 
-	<!-- <form action='http://127.0.0.1:5000/' method='POST' name="fofo"> -->
-
-	<form action='#' name="fofo">
-		<div style="margin-left: 100px; margin-top: 100px;">
-			<div>
-				<table style="margin-left: 20px; margin-right: 20px;" width="400px;"
-					height="200px" cellspacing="10">
-					<tr>
-						<select name="category" id="category">
-							<option value="0" style="font-color: black;">카테고리</option>
-							<option value="0">로션</option>
-							<option value="1">오일</option>
-							<option value="3">크림</option>
-							<option value="4">워시</option>
-						</select>
-						<br>
-					</tr>
-					<!-- 알러지 성분 -->
-					<tr>
-						<td><input type="hidden" name="allergy_ingre" value="0"
-							class="allergy_ingre"> 알러지 성분 있음<input type="radio"
-							name="allergy" value="1" class="allergy"></td>
-						<td></td>
-						<td>알러지 성분 없음<input type="radio" name="allergy" value="0"
-							class="allergy">
-						</td>
-					</tr>
-					<tr>
-						<td>아토피 좋은 성분<input type="radio" name="atopy" value="1"
-							class="atopy"></td>
-						<td></td>
-						<td>아토피 안좋은 성분 <input type="radio" name="atopy" value="0"
-							class="atopy">
-						</td>
-					</tr>
-					<tr>
-						<td>민감한 피부에 좋음<input type="radio" name="sensitivity"
-							value="1" class="sensitivity"></td>
-						<td></td>
-						<td>민감한 피부에 안좋음<input type="radio" name="sensitivity"
-							value="0" class="sensitivity">
-						</td>
-					</tr>
-					<tr>
-					</tr>
-					<tr>
-						<td align="right"><input type="button" value="검        색"
-							class="btn btn-primary"></td>
-					</tr>
+	<div class="section-container">
+		<div class="container">
+			<div class="row section-container-spacer">
+				<div class="col-xs-12">
+					<div class="text-center">
+						<h1>안전합니다!</h1>
 					</div>
-				</table>
+					<div class="col-md-8 col-md-offset-2" style="padding-right: 5px">
+						<p>각 제품의 성분들을 하나도 빠짐없이 취압하여 분석합니다. 피부 타입별 민감도 분석 후 해로운 성분을
+							배제하고</p>
+						<p class="text-center">또한 유리한 성분을 조합하여 유사한 성분을 함유 되어 있는 제품 정보를
+							제공해드립니다.</p>
+					</div>
+				</div>
 			</div>
-	</form>
+			<!-- <form action='http://127.0.0.1:5000/' method='POST' name="fofo"> -->
 
+			<form action='#' name="fofo">
+				<div style="margin-left: 100px; margin-top: 100px;">
+					<div>
+						<table style="margin-left: 20px; margin-right: 20px;"
+							width="400px;" height="200px" cellspacing="10">
+							<tr>
+								<select name="category" id="category">
+									<option value="" style="font-color: black;">카테고리</option>
+									<option value="0">로션</option>
+									<option value="1">오일</option>
+									<option value="3">크림</option>
+									<option value="4">워시</option>
+								</select>
+								<br>
+							</tr>
+							<!-- 알러지 성분 -->
+							<tr>
+								<td>알레르기가 있으신가요?</td>
+								<td><input type="hidden" name="allergy_ingre" value="0"
+									class="allergy_ingre"> YES <input type="radio"
+									name="allergy" value="1" class="allergy"></td>
+								<td>NO <input type="radio" name="allergy" value="0"
+									class="allergy">
+								</td>
+							</tr>
+							<tr>
+								<td>아토피가 있으신가요?</td>
+								<td>YES <input type="radio" name="atopy" value="1"
+									class="atopy"></td>
+								<td>NO <input type="radio" name="atopy" value="0"
+									class="atopy">
+								</td>
+							</tr>
+							<tr>
+								<td>예민한 피부인가요?</td>
+								<td>YES <input type="radio" name="sensitivity" value="1"
+									class="sensitivity"></td>
+								<td>NO <input type="radio" name="sensitivity" value="0"
+									class="sensitivity">
+								</td>
+							</tr>
+							<tr>
+							</tr>
+							<tr>
+								<td align="right"><input type="button" value="검        색"
+									class="btn btn-primary"></td>
+							</tr>
+							</div>
+						</table>
+					</div>
+			</form>
 
-	<div id="list">
-	
+		</div>
 	</div>
+
+
+	<div id="list"></div>
 
 
 	<p class="controlls"></p>
