@@ -9,7 +9,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
 integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="jquery.ajax-cross-origin.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		
@@ -24,12 +24,15 @@ integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="ano
 			
 			//alert(allergy_ingre);
 			$.ajax({
-				url : "http://127.0.0.1:5000/",
-				type : "POST",
+				//url : "http://210.105.224.109:5000",
+				url : "/AhangProject/FlaskServer",
+				type : "POST",					
 				data : {category:$("#category").val(),allergy_ingre:$(".allergy_ingre").val(),
 					allergy:$(".allergy").val(),atopy:$(".atopy").val(),sensitivity:$(".sensitivity").val()},
-				dataType : "text",
-				success : function(){alert("성공");}
+				dataType : "html",
+				success : function(data){
+					alert(data);
+				}
 					//$.ajax({
 						//url : "./baby.mem.pojo/runn",
 						//type : "post",
@@ -44,6 +47,12 @@ integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="ano
 		}); //click
 		
 	}); //ready
+	
+	
+	function ifs(){}
+	
+	
+	
 	
 	
 	
