@@ -124,14 +124,6 @@ th, td {
 						<li><a href="./Category.jsp" title=""> 카테고리 </a></li>
 						<li><a href="./Ranking.jsp" title=""> 안전등급별 제품 </a></li>
 						<li><a href="./AhangSearch.jsp" title=""> 추천제품 </a></li>
-						<li>
-							<p>
-								<a href="#"
-									onclick="window.open('LoginHJ.html','_blank','width=550 height=600 top=200 left=650')"
-									class="btn btn-primary navbar-btn" title=""> Login </a>
-							</p>
-						</li>
-
 					</ul>
 				</div>
 			</div>

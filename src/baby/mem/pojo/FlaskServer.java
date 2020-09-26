@@ -36,7 +36,7 @@ public class FlaskServer extends HttpServlet {
 		String atopy = request.getParameter("atopy");
 		String sensitivity = request.getParameter("sensitivity");
 
-		String url = "http://118.40.119.225:5000?category=" + category + "&allergy_ingre=" + allergy_ingre + "&allergy="
+		String url = "http://210.105.224.109:5000?category=" + category + "&allergy_ingre=" + allergy_ingre + "&allergy="
 				+ allergy + "&atopy=" + atopy + "&sensitivity=" + sensitivity;
 
 		URL u = new URL(url);
