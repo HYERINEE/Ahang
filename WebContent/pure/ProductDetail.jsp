@@ -7,6 +7,10 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
@@ -100,13 +104,7 @@
 						<li><a href="./Category.jsp" title=""> 카테고리 </a></li>
 						<li><a href="./Ranking.jsp" title=""> 안전등급별 제품 </a></li>
 						<li><a href="./AhangSearch.jsp" title=""> 추천제품 </a></li>
-						<li>
-							<p>
-								<a href="#"
-									onclick="window.open('LoginHJ.html','_blank','width=550 height=600 top=200 left=650')"
-									class="btn btn-primary navbar-btn" title=""> Login </a>
-							</p>
-						</li>
+						
 
 					</ul>
 				</div>
@@ -211,9 +209,16 @@
 		</div>
 
 	</div>
-
-
-
+	<script>
+		$(document).ready(function(){
+			$("#save").click(function(){
+					$(".reviewform").each(function(){
+						this.reset();
+					});
+			});
+			
+		});
+	</script>
 
 	<footer>
 		<div class="section-container footer-container">
@@ -269,11 +274,7 @@
 			</div>
 	</footer>
 
-	<script>
-		document.addEventListener("DOMContentLoaded", function(event) {
-			navActivePage();
-		});
-	</script>
+
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
