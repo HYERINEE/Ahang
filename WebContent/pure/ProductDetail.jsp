@@ -1,13 +1,13 @@
 <%@page import="baby.model.Total_modelVO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="baby.model.BabyMemberDAO"%>
+<%@page import="java.util.ArrayList" %>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <c:set var="cpath" value="${pageContext.request.contextPath}" />
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +32,21 @@
 <title>Title page</title>
 
 <link href="./Product100.css" rel="stylesheet">
+
+
+<style type="text/css">
+	.review_textarea{
+		line-height: 15px;
+		display: inline;
+		
+	}
+
+</style>
+
+
+
+
+
 </head>
 
 <body>
@@ -55,6 +70,10 @@
 	Total_modelVO vo2 = dao.CaRank(num2);
 	%>
 
+	<% String sr = vo.getIngredient();
+		sr = sr.trim();
+		String[] ingre = sr.split("\\+");
+	%>
 
 	<!-- Add your content of header -->
 	<header>
@@ -141,13 +160,14 @@
 					</div>
 				</div>
 
-
+			<!--vo.getIngredient() -->
 				<textarea
 					style="width: 454px; height: 209px; margin-right: 70px; margin-left: 50px; padding-top: 30px; padding-left: 10px; border-left-width: 1px; border-right-width: 1px;"
 					rows="5" class="review_textarea">
-					<%=vo.getIngredient()%>
-					</textarea>
-
+	<% for(String i:ingre){%>
+	<%=i %>
+	<% } %>
+				</textarea>
 
 				<!-- 리뷰작성란 -->
 				<div class="wrap"
