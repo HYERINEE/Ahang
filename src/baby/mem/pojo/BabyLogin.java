@@ -40,7 +40,7 @@ public class BabyLogin extends HttpServlet {
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("id", id);
-			response.sendRedirect("./pure/AhangHomeBx.html");
+			response.sendRedirect("./pure/AhangHome_loginBx.html");
 			//out.print("window.location.href='./pure/AhangHome.html'");
 			
 		}else {
