@@ -86,7 +86,7 @@
 							class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="./AhangHome.html" title=""> <img
+					<a class="navbar-brand" href="./AhangHome_loginBx.html" title=""> <img
 						src="./assets/images/mashuptemplate.svg" class="navbar-logo-img"
 						alt="">
 					</a>
@@ -94,7 +94,7 @@
 
 				<div class="collapse navbar-collapse" id="navbar-collapse-uarr">
 					<ul class="nav navbar-nav navbar-right">
-						<li align="center"><a href="./AhangHome.html" title=""
+						<li align="center"><a href="./AhangHome_loginBx.html" title=""
 							class="active"> Home </a></li>
 						<li><a href="./AhangAbout.html" title=""> 기업소개 </a></li>
 						<li><a href="./Category.jsp" title=""> 카테고리 </a></li>
