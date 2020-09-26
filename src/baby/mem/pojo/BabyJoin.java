@@ -36,7 +36,9 @@ public class BabyJoin extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		if(cnt>0) {
-			System.out.println("성공");
+			//System.out.println("성공");
+			response.sendRedirect("./pure/LoginHJ.html");
+			
 		}else {
 			System.out.println("실패");
 		}
